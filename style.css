@@ -1,0 +1,41 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: "Arial", sans-serif;
+}
+
+.superior-menu{
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.box-gray{
+    background-color: #f2f2f2;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.6);
+}
+
+.box-white{
+    background-color: #ffffff;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.6);
+}
+
+.box-dark-gray{
+    background-color: rgb(215, 215, 215);
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+}
+
+.section-title{
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.backgroundWhite{
+    background-color: white;
+}
+
+/* Enquanto menor que 720px */
+@media only screen and (max-width: 720px){
+    .desktop{
+        display: none;
+    }
+}
