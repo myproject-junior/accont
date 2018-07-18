@@ -1,26 +1,95 @@
 h1,h2,h3,h4,h5,h6{
     font-family: "Arial", sans-serif;
 }
-
+ul{
+    padding: 0px;
+}
+body{
+    padding-top: 55px;
+}
 .superior-menu{
     left: 0px;
     top: 0px;
     width: 100%;
+    position: absolute;
+    margin: 0px;
+    height: 65px;
+}
+
+.superior-menu-logo{
+    width: 150px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+}
+
+.superior-menu-botao{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.voltar-menu-image{
+    width: 50px;
+    margin: 18px;
+    float: left;
+}
+
+.menu-mobile-titulo{
+    font-family: "Arial", sans-serif;
+    margin: 27px 90px;
+    width: 300px;
+    font-size: 35px;
+}
+#menu-mobile{
+    position: absolute;
+    background-color: #346db1;
+    top: 0px;
+    left: 0px;
+    width: 60%;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.7);
+}
+
+.menu-mobile-titulo{
+    color: white;
+}
+
+#menu-mobile button{
+    color: white;
+    width: 90%;
+    margin: 0px 0px;
+    border-width: 0px;
+    background-color: transparent;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#menu-mobile .menu-mobile-ul li:nth-child(odd){
+    background: #5099ef;
+}
+
+#menu-mobile ul li:nth-child(even){
+    background: #346db1;
 }
 
 .box-gray{
     background-color: #f2f2f2;
-    box-shadow: 0px 3px 4px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .box-white{
     background-color: #ffffff;
-    box-shadow: 0px 3px 4px rgba(0,0,0,0.6);
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.6);
 }
 
 .box-dark-gray{
     background-color: rgb(215, 215, 215);
     box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+}
+.box-blue{
+    background: #5099ef;
 }
 
 .section-title{
@@ -33,9 +102,45 @@ h1,h2,h3,h4,h5,h6{
     background-color: white;
 }
 
-/* Enquanto menor que 720px */
-@media only screen and (max-width: 720px){
+.mobile{
+    display: none;
+}
+#menu-desktop{
+    text-align: center;
+
+}
+
+#menu-desktop li{
+    display: inline;
+}
+#menu-logo{
+    transform: translateY(50%);
+    width:4%;
+}
+
+#diagnostico-desktop{
+    margin-left: 3%;
+
+}
+#menu-desktop button{
+    background-color: white;
+    border-width: 0px;
+    padding: 9px;
+    color: #5099ef;
+    width: 140px;
+    font-size: 110%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Enquanto menor que 600px */
+@media only screen and (max-width: 980px){
     .desktop{
         display: none;
+    }
+    .mobile{
+        display: block;
     }
 }
