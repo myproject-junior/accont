@@ -1,0 +1,10 @@
+footer {
+	background-color: lightgray;
+	color: black;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+footer address:last-child {
+	margin-bottom: 0;
+}
