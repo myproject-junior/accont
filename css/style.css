@@ -16,6 +16,7 @@ body{
     height: 65px;
 }
 
+
 .superior-menu-logo{
     width: 150px;
     position: relative;
@@ -70,9 +71,61 @@ body{
     background: #5099ef;
 }
 
+
+
 #menu-mobile ul li:nth-child(even){
     background: #346db1;
 }
+
+.servicos-div .coluna{
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+.servicos-div .p{
+    text-align: inherit;
+    width: 50%;
+}
+
+.linha:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.desktop p{
+    margin-left: 10%;   
+}
+.desktop .coluna img{
+    float: left;
+}
+
+.mobile .esquerda p{
+    margin-left: 10%;
+}
+
+.mobile .direita p{
+    margin-right: 10%; 
+}
+
+.mobile .esquerda img{
+    float: left;
+}
+
+.mobile .direita img{
+    float: right; 
+}
+.mobile .coluna{
+    clear: left;
+}
+
+
+
+.processo-seletivo-section h1{
+    clear: both;
+}
+
+
 
 .box-gray{
     background-color: #f2f2f2;
@@ -109,7 +162,6 @@ body{
     text-align: center;
 
 }
-
 #menu-desktop li{
     display: inline;
 }
