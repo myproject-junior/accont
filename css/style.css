@@ -1,198 +1,317 @@
-h1,h2,h3,h4,h5,h6{
-    font-family: "Arial", sans-serif;
+/* Para PCs e telas maiores que 600px */
+.desktop{
+    display: block;
 }
-ul{
-    padding: 0px;
-}
-body{
-    padding-top: 55px;
-}
-.superior-menu{
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    position: absolute;
-    margin: 0px;
-    height: 65px;
-}
-
-
-.superior-menu-logo{
-    width: 150px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10px;
-}
-
-.superior-menu-botao{
-    position: absolute;
-    top: 15px;
-    left: 15px;
-}
-
-.voltar-menu-image{
-    width: 50px;
-    margin: 18px;
-    float: left;
-}
-
-.menu-mobile-titulo{
-    font-family: "Arial", sans-serif;
-    margin: 27px 90px;
-    width: 300px;
-    font-size: 35px;
-}
-#menu-mobile{
-    position: absolute;
-    background-color: #346db1;
-    top: 0px;
-    left: 0px;
-    width: 60%;
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.7);
-}
-
-.menu-mobile-titulo{
-    color: white;
-}
-
-#menu-mobile button{
-    color: white;
-    width: 90%;
-    margin: 0px 0px;
-    border-width: 0px;
-    background-color: transparent;
-    text-align: left;
-    font-size: 20px;
-    padding: 10px;
-}
-
-#menu-mobile .menu-mobile-ul li:nth-child(odd){
-    background: #5099ef;
-}
-
-
-
-#menu-mobile ul li:nth-child(even){
-    background: #346db1;
-}
-
-.servicos-div .coluna{
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-}
-.servicos-div .p{
-    text-align: inherit;
-    width: 50%;
-}
-
-.linha:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.desktop p{
-    margin-left: 10%;   
-}
-.desktop .coluna img{
-    float: left;
-}
-
-.mobile .esquerda p{
-    margin-left: 10%;
-}
-
-.mobile .direita p{
-    margin-right: 10%; 
-}
-
-.mobile .esquerda img{
-    float: left;
-}
-
-.mobile .direita img{
-    float: right; 
-}
-.mobile .coluna{
-    clear: left;
-}
-
-
-
-.processo-seletivo-section h1{
-    clear: both;
-}
-
-
-
-.box-gray{
-    background-color: #f2f2f2;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-}
-
-.box-white{
-    background-color: #ffffff;
-    box-shadow: 0px 4px 3px rgba(0,0,0,0.6);
-}
-
-.box-dark-gray{
-    background-color: rgb(215, 215, 215);
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
-}
-.box-blue{
-    background: #5099ef;
-}
-
-.section-title{
-    left: 0px;
-    top: 0px;
-    width: 100%;
-}
-
-.backgroundWhite{
-    background-color: white;
-}
-
 .mobile{
     display: none;
 }
-#menu-desktop{
-    text-align: center;
 
-}
-#menu-desktop li{
-    display: inline;
-}
-#menu-logo{
-    transform: translateY(50%);
-    width:4%;
+/* Reset BÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡sico */
+html, body{
+    margin: 0;
+    padding: 0;
 }
 
-#diagnostico-desktop{
-    margin-left: 3%;
-
+button{
+    outline: none;
+    border-width: 0;
 }
-#menu-desktop button{
-    background-color: white;
-    border-width: 0px;
-    padding: 9px;
-    color: #5099ef;
-    width: 140px;
-    font-size: 110%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+
+/* Parte superior/MENU */
+header{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) , rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+.desk-logo{
+    max-height: 3.2vw;
+    height: 8vh;
+    float: left;
+    padding: 0 1vw;
+}
+.desk-menu-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    width: 78vw;
+}
+.desk-menu-div{
+    display: flex;
+    align-items: center;
+}
+.desk-menu-button{
+    margin: 0 0.9vw;
+    background-color: transparent;
+    border-width: 0;
+    color: white;
+    font-family: "LATO", sans-serif;
+    font-weight: bold;
+    font-size: 11px;
     cursor: pointer;
-    text-align: center;
+    padding: 0 2.5px 3px 2.5px;
+}
+.desk-menu-button:active{
+    color: white;
+    border-width: 0 0 1px;
+    border-color: white;
 }
 
-/* Enquanto menor que 600px */
-@media only screen and (max-width: 980px){
-    .desktop{
-        display: none;
-    }
+.desk-menu-button-activated{
+    color: white;
+    border-width: 0 0 2px;
+    border-color: #2171a9;
+}
+
+.desk-menu-button:hover{
+    color: rgb(200,200,200);
+}
+.desk-menu-diagnostico{
+    margin: 0.9vw 1.2vw 0.9vw 0;
+    background-color: #2171a9b5;
+    font-family: "LATO", sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9vw;
+    border-width: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease;
+    transition:  all 0.4s ease;
+    width: 10vw;
+    height: 2.5vw;
+}
+
+.desk-menu-diagnostico:hover{
+    background-color: #2171a9;
+}
+
+.desk-menu-diagnostico-image{
+    max-height: 54%;
+    max-width: 16%;
+    margin-right: 7px;
+}
+
+/* Slider */
+
+.slider{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.slide{
+    width: 100%;
+    height: 100vh;
+    background-size: 120vw;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    filter: blur(3px);
+}
+
+.slide-box{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4) , rgba(0,0,0,0.7));
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.slide-box-title{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 5vh;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.1;
+    font-weigth: normal;
+    margin-left: -5px;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.slide-box-subtitle{
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin: 45px;
+    margin-top: 25px;
+}
+
+/* SoluÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes ContÃƒÆ’Ã‚Â¡beis */
+
+.solucoes-section{
+    background-color: white;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-top: 0x;
+    margin: 0px;
+    font-family: "Lato";
+}
+
+.solucoes-servicos{
+    display: flex;
+    padding: 25px;
+    padding-top: 0px;
+}
+
+.solucoes-title{
+    padding: 0 35px;
+}
+
+.solucoes-servico{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.solucoes-servico-image{
+    width: 100%;
+}
+
+.solucoes-servico:hover{
+    background-color: #c3c3c3;
+}
+
+/* Processo Seletivo */
+.processoseletivo-section{
+    background-color: #1e72ab;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-top: 0x;
+    margin: 0px;
+    font-family: "Lato";
+    color: white;
+}
+
+.processoseletivo-title{
+    margin: 15px 25px;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+.processoseletivo-div{
+    padding: 15px 25px;
+}
+
+.processoseletivo-image{
+    height: 19px;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    border-style: solid;
+    border-color: #5c91b5;
+    border-width: 0px 1px 0px 0px;
+}
+
+
+.processoseletivo-description{
+    margin: 0 20px;
+    padding: 0;
+}
+
+.processoseletivo-button{
+    margin-top: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: white;
+    border-style: double;
+    border-width: 3px;
+    text-transform: uppercase;
+    font-family: "LATO";
+    font-weight: bold;
+    font-size: 2.5vh;
+    padding: 5px 12px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease;
+    transition:  all 0.4s ease;
+}
+
+.processoseletivo-button:hover{
+    background-color: white;
+    color: #1e72ab;
+    border-color: #1e72ab;
+}
+
+
+.slide1{
+    background-image: url(../imagens/slide1.png);
+}
+
+/* Para Smartphones e telas menores que 600px */
+@media all and (max-width: 1050px){
     .mobile{
-        display: block;
+        display: block !important;
+    }
+    .desktop{
+        display: none !important;
+    }
+
+    .desk-logo{
+        max-height: inherit;
+        height: inherit;
+        padding: 0vw;
+        margin: 3vw;
+        width: 23vw;
+    }
+    .desk-menu-diagnostico{
+        width: inherit;
+        margin: 0 2vw;
+        transform: translateY(-2px);
+        padding: 1.7vw;
+        height: inherit;
+        font-size: 2.7vw;
+    }
+    .desk-menu-diagnostico-image{
+        margin: 0;
+        padding: 0;
+        max-height: 3.4vw;
+        max-width: inherit;
+        margin-right: 10;
+    }
+
+    .slider{
+        position: relative;
+        z-index: 0;
+        max-height: inherit;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transform: inherit;
+    }
+
+    .slide{
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .slide1{
+        background-image: url(../imagens/slide1-mobile.jpg);
+    }
+}
+
+@media all and (max-width: 600px){
+    .slide{
+        background-size: 100vh;
     }
 }
