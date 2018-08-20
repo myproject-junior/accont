@@ -6,7 +6,7 @@
     display: none;
 }
 
-/* Reset BÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡sico */
+/* Reset Basico */
 html, body{
     margin: 0;
     padding: 0;
@@ -26,13 +26,26 @@ header{
     left: 0;
     top: 0;
     z-index: 5;
+    -webkit-transition: all 0.3s ease;
+    transition:  all 0.3s ease;
 }
+
+.menuScrolled{
+    background: white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.24);
+}
+
+.desk-menu-button-scrolled{
+    color: black;
+}
+
 .desk-logo{
     max-height: 3.2vw;
     height: 8vh;
     float: left;
     padding: 0 1vw;
 }
+
 .desk-menu-ul{
     display: flex;
     align-items: center;
@@ -41,10 +54,12 @@ header{
     padding: 0;
     width: 78vw;
 }
+
 .desk-menu-div{
     display: flex;
     align-items: center;
 }
+
 .desk-menu-button{
     margin: 0 0.9vw;
     background-color: transparent;
@@ -55,11 +70,24 @@ header{
     font-size: 11px;
     cursor: pointer;
     padding: 0 2.5px 3px 2.5px;
+    -webkit-transition: all 0.3s ease;
+    transition:  all 0.3s ease;
 }
+
+.desk-menu-button-scrolled{
+    color: #1f2024;
+}
+
 .desk-menu-button:active{
     color: white;
     border-width: 0 0 1px;
     border-color: white;
+}
+
+.desk-menu-button-scrolled:active{
+    color: #000000;
+    border-width: 0 0 1px;
+    border-color: #000000;
 }
 
 .desk-menu-button-activated{
@@ -71,6 +99,11 @@ header{
 .desk-menu-button:hover{
     color: rgb(200,200,200);
 }
+
+.desk-menu-button-scrolled:hover{
+    color: rgb(120,120,120);
+}
+
 .desk-menu-diagnostico{
     margin: 0.9vw 1.2vw 0.9vw 0;
     background-color: #2171a9b5;
@@ -152,7 +185,7 @@ header{
     margin-top: 25px;
 }
 
-/* SoluÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes ContÃƒÆ’Ã‚Â¡beis */
+/* Solucoes contabeis */
 
 .solucoes-section{
     background-color: white;
@@ -284,7 +317,7 @@ header{
         padding: 0;
         max-height: 3.4vw;
         max-width: inherit;
-        margin-right: 10;
+        margin-right: 10px;
     }
 
     .slider{
@@ -303,6 +336,8 @@ header{
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
+        -webkit-transition: all 0.4s ease;
+        transition:  all 0.4s ease;
     }
 
     .slide1{
