@@ -21,12 +21,14 @@ function menuClick(){
 }
 
 //Quando mudar o slide
+let actualBack = 1;
 function changeSlideScroll(){
-    let actualBack = 1;
-    if(window.scrollY >= elemGetPosition(".solucoes-section", 2)){
-        if (actualBack !== 2) background.change(2);
-    }else if(window.scrollY <= elemGetPosition(".solucoes-section", 1)){
-        if (actualBack !== 1) background.change(1);
+    if(window.scrollY <= elemGetPosition(".solucoes-section", 2) && actualBack !== 1){
+        background.change(1);
+        actualBack = 1;
+    }else if(window.scrollY >= elemGetPosition(".processoseletivo-section", 1) && actualBack !== 2){
+        background.change(2);
+        actualBack = 2;
     }
 }
 
@@ -83,8 +85,7 @@ class background{
 
     static change(id){
         let background = document.getElementById("slide");
-        background.class = "";
-        background.class = "slide slide" + id;
+        background.setAttribute("class", "slide slide" + id);
     }
 }
 
