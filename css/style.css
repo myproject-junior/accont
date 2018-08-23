@@ -41,9 +41,9 @@ header{
 
 .desk-logo{
     max-height: 3.2vw;
+    margin-right: 17vw;
     height: 8vh;
     float: left;
-    padding: 0 1vw;
 }
 
 .desk-menu-ul{
@@ -52,12 +52,12 @@ header{
     justify-content: center;
     list-style-type: none;
     padding: 0;
-    width: 78vw;
 }
 
 .desk-menu-div{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .desk-menu-button{
@@ -105,7 +105,8 @@ header{
 }
 
 .desk-menu-diagnostico{
-    margin: 0.9vw 1.2vw 0.9vw 0;
+    margin: 0.9vw;
+    margin-left: 17vw;
     background-color: #2171a9b5;
     font-family: "LATO", sans-serif;
     color: white;
@@ -208,12 +209,12 @@ header{
 
 .solucoes-servicos{
     display: flex;
-    padding: 2vw;
+    padding: 5vw;
     padding-top: 0px;
 }
 
 .solucoes-title{
-    padding: 0 2vw;
+    padding: 0 5vw;
 }
 
 .solucoes-servico{
@@ -223,10 +224,18 @@ header{
 
 .solucoes-servico-image{
     width: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition:  all 0.2s ease;
 }
 
-.solucoes-servico:hover{
-    background-color: #c3c3c3;
+.solucoes-servico:hover .solucoes-servico-image{
+    width: 105%;
+    margin: -2.5%
+}
+
+.solucoes-servico-description{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Processo Seletivo */
@@ -246,11 +255,11 @@ header{
     justify-content: left;
     display: flex;
     padding: 0;
-    margin: 15px 2vw;
+    margin: 15px 5vw;
 }
 
 .processoseletivo-div{
-    padding: 15px 2vw;
+    padding: 15px 5vw;
 }
 
 .processoseletivo-image{
@@ -265,6 +274,8 @@ header{
 .processoseletivo-description{
     margin: 0;
     padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .processoseletivo-button{
@@ -301,6 +312,7 @@ header{
     padding-top: 0x;
     margin: 0px;
     font-family: "Lato";
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) ,  rgba(0,0,0,0));
 }
 
 .blog-articles{
@@ -315,7 +327,7 @@ header{
     justify-content: left;
     display: flex;
     padding: 0;
-    margin: 15px 2vw;
+    margin: 15px 5vw;
     color: white;
 }
 
@@ -329,47 +341,49 @@ header{
 }
 
 .blog-article{
-    width: 28.8vw;
-    background-color: rgba(255,255,255,0.35);
-    box-shadow: 0px 0px 6px rgba(255,255,255,0.30);
-    margin: 0.3vw;
+    width: 28vw;
+    margin: 4.5vh 0.6vw;
     cursor: pointer;
     -webkit-transition: all 0.2s linear;
     transition:  all 0.2s linear;
-    padding: 5px 1.2vw;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.7);
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #1e72ab;
 }
 
-.blog-article:hover{
-    padding: 10px 1.5vw;
+.blog-article:hover .blog-article-image{
+    background-size: 110%;
+}
+
+.blog-article:hover .blog-article-title{
+    color: #1e72ab;
 }
 
 .blog-article-image{
-    width: 50%;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    float: left;
-}
-
-.blog-article-description{
-    margin: 0;
-    font-size: 15px;
-    font-weight: normal;
+    width: 100%;
+    height: 32%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.2s ease;
+    transition:  all 0.2s ease;
 }
 
 .blog-article-title{
-    padding: 3px;
     margin: 0;
+    font-size: 1.3vw;
+    font-weight: normal;
+    color: #000000;
+    text-justify: inter-word;
+    font-family: "Calibri", sans-serif;
+    margin-top: 5px;
+    padding: 0 2px;
+    margin-bottom: 5px;
     text-align: left;
-    margin-bottom: 10px;
-    padding: 1px;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-radius: 3px 3px 0 0;
-    color: black;
-    font-size: 1.1vw;
-    font-family: "Calibri";
-    font-weight: bold;
-    text-transform: uppercase;
+
 }
 
 .blog-article-aside{
@@ -377,19 +391,28 @@ header{
     justify-content: center;
     position: relative;
     width: 100%;
-    height: 25px;
+    margin-top: 10px;
 }
 
 .blog-aside-element{
-    width: 33.333%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     float: left;
     position: relative;
     margin: 0;
     padding: 0;
-    height: 25px;
+}
+
+.blog-aside-views, .blog-aside-comments{
+    width: 48%;
+    padding: 0;
+    margin: 0;
+    font-size: 0.7vw;
+    float: left;
+    padding: 0 0.7%;
+}
+
+.blog-aside-comments{
+    text-align: right;
 }
 
 /* Para Smartphones e telas menores que 600px */
