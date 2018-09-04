@@ -5,7 +5,6 @@ window.addEventListener("hashchange", menuClick);
 //Quando der scroll
 let lastScroll = window.scrollY;
 window.onscroll = function(){
-    changeSlideScroll();
     backPosChange();
     menuBarChange();
 };
@@ -20,33 +19,16 @@ function menuClick(){
     }
 }
 
-//Quando mudar o slide
-let actualBack = 1;
-function changeSlideScroll(){
-    if(window.scrollY <= elemGetPosition(".solucoes-section", 2) && actualBack !== 1){
-        background.change(1);
-        actualBack = 1;
-    }else if(window.scrollY >= elemGetPosition(".processoseletivo-section", 1) && actualBack !== 2){
-        background.change(2);
-        actualBack = 2;
-    }
-}
-
 //Mudar posição do slide
 function backPosChange(){
-    if(lastScroll > window.scrollY){ // Descendo
-        background.toBottom();
-    }else if(lastScroll < window.scrollY){ // Subindo
-        background.toUp();
-    }
-    lastScroll = window.scrollY;
+    background.newPosition();
 }
 
 //Mudar a barra do menu
 function menuBarChange(){
     const scrollPos = window.scrollY;
     let menuBtClass = document.getElementsByClassName("desk-menu-button");
-    if(scrollPos >= 440){
+    if(scrollPos >= 50){
         document.querySelector("header").classList.add("menuScrolled");
         for(let i = 0; i < menuBtClass.length; i++) menuBtClass[i].classList.add("desk-menu-button-scrolled");
     }else{
@@ -71,21 +53,10 @@ classes
 Fazer o background se mover
 */
 class background{
-    static toUp() {
+    static newPosition(){
         const element = document.getElementById("slide");
-        const positionValue = parseInt(document.getElementById("slide").style.backgroundPosition.substring(3, 6));
-        if (positionValue >= 0) element.style.backgroundPosition = "0 " + (positionValue - 1) + "%";
-    }
-
-    static toBottom(){
-        const element = document.getElementById("slide");
-        const positionValue = parseInt(document.getElementById("slide").style.backgroundPosition.substring(3, 6));
-        if(positionValue < 51) element.style.backgroundPosition = "0 " + (positionValue + 1) + "%";
-    }
-
-    static change(id){
-        let background = document.getElementById("slide");
-        background.setAttribute("class", "slide slide" + id);
+        const totalHeight = document.body.scrollHeight;
+        element.style.backgroundPosition = "0 " + parseInt(window.scrollY/totalHeight*100) + "%";
     }
 }
 

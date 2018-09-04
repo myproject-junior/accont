@@ -53,6 +53,12 @@ header{
     list-style-type: none;
     padding: 0;
 }
+.desk-logo-a{
+    width: 20%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .desk-menu-div{
     display: flex;
@@ -150,7 +156,7 @@ header{
     margin: 0;
     padding: 0;
     position: fixed;
-    filter: blur(3px);
+
 }
 
 .slide-box{
@@ -218,8 +224,13 @@ header{
 }
 
 .solucoes-servico{
-    padding: 0px 1vw;
+    padding: 0 1vw;
+    margin-left: -1vw;
     cursor: pointer;
+}
+
+.solucoes-servico{
+
 }
 
 .solucoes-servico-image{
@@ -228,14 +239,29 @@ header{
     transition:  all 0.2s ease;
 }
 
-.solucoes-servico:hover .solucoes-servico-image{
-    width: 105%;
-    margin: -2.5%
+
+.solucoes-servico::after{
+    background: transparent;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%, 500%);
+    height: 2px;
+    content: "";
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition:  all 0.2s ease-in-out;
+}
+.solucoes-servico:hover::after{
+    background: #474747;
+    transform: translate(-50%, 0%);
 }
 
 .solucoes-servico-description{
     text-align: justify;
     text-justify: inter-word;
+    -webkit-transition: all 0.3s ease;
+    transition:  all 0.3s ease;
 }
 
 /* Processo Seletivo */
@@ -312,7 +338,7 @@ header{
     padding-top: 0x;
     margin: 0px;
     font-family: "Lato";
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6) ,  rgba(0,0,0,0));
+    background: #ffffff6e;
 }
 
 .blog-articles{
@@ -346,20 +372,12 @@ header{
     cursor: pointer;
     -webkit-transition: all 0.2s linear;
     transition:  all 0.2s linear;
-    background-color: white;
+    background-color: transparent;
     padding: 5px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.7);
-    border-style: solid;
-    border-width: 0px 0px 2px 0px;
-    border-color: #1e72ab;
 }
 
 .blog-article:hover .blog-article-image{
     background-size: 110%;
-}
-
-.blog-article:hover .blog-article-title{
-    color: #1e72ab;
 }
 
 .blog-article-image{
@@ -376,7 +394,7 @@ header{
     margin: 0;
     font-size: 1.3vw;
     font-weight: normal;
-    color: #000000;
+    color: #2e3035;
     text-justify: inter-word;
     font-family: "Calibri", sans-serif;
     margin-top: 5px;
@@ -409,6 +427,7 @@ header{
     font-size: 0.7vw;
     float: left;
     padding: 0 0.7%;
+    color: #5f5f5f;
 }
 
 .blog-aside-comments{
@@ -424,20 +443,31 @@ header{
         display: none !important;
     }
 
+    /* Parte Superior */
+
     .desk-logo{
         max-height: inherit;
         height: inherit;
         padding: 0vw;
-        margin: 3vw;
         width: 23vw;
+        float: left;
+        margin-left: 5vw;
+    }
+    .desk-menu-div{
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
     }
     .desk-menu-diagnostico{
         width: inherit;
         margin: 0 2vw;
-        transform: translateY(-2px);
+        transform: translateY(-60%);
         padding: 1.7vw;
         height: inherit;
         font-size: 2.7vw;
+        float: right;
+        margin-right: 5vw;
+        position: relative;
     }
     .desk-menu-diagnostico-image{
         margin: 0;
@@ -446,6 +476,8 @@ header{
         max-width: inherit;
         margin-right: 10px;
     }
+
+    /* Slides */
 
     .slider{
         position: relative;
@@ -463,13 +495,24 @@ header{
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
-        -webkit-transition: all 0.4s ease;
-        transition:  all 0.4s ease;
     }
 
     .slide1{
         background-image: url(../imagens/slide1-mobile.jpg);
     }
+    .slide2{
+        background-image: url(../imagens/slide2-mobile.png);
+    }
+
+    /* Soluções */
+    .solucoes-servico{
+        width: 100vw;
+    }
+
+    .solucoes-servicos{
+        flex-wrap: wrap;
+    }
+
 }
 
 @media all and (max-width: 600px){
