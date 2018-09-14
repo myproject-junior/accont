@@ -3,11 +3,15 @@
 window.addEventListener("hashchange", menuClick);
 
 //Quando der scroll
-let lastScroll = window.scrollY;
 window.onscroll = function(){
     backPosChange();
     menuBarChange();
 };
+
+//Setar tamanho do mapa
+$(document).ready(function() {
+    document.querySelector("#gmap_canvas").setAttribute("width", window.innerWidth - 15);
+});
 
 //Quando clicar no menu
 function menuClick(){

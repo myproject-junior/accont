@@ -1,6 +1,7 @@
 Copyright MyProject \
 
-Site para empresa Júnior da UNIFOR (Universidade de Fortaleza)
+Site para empresa Júnior da UFC (Universidade Federal do Ceará)
+Accont
 
 Status: \
 Desenvolvimento...

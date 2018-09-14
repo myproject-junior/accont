@@ -209,7 +209,7 @@ header{
     float: left;
     width: 100%;
     position: relative;
-    padding-top: 0x;
+    padding-top: 0;
     margin: 0px;
     font-family: "Lato";
     padding: 3vh 0;
@@ -284,7 +284,7 @@ header{
     float: left;
     width: 100%;
     position: relative;
-    padding-top: 0x;
+    padding-top: 0;
     margin: 0px;
     font-family: "Lato";
     color: white;
@@ -351,7 +351,7 @@ header{
     float: left;
     width: 100%;
     position: relative;
-    padding-top: 0x;
+    padding-top: 0;
     margin: 0px;
     font-family: "Lato";
     background: #ffffffe6;
@@ -468,7 +468,7 @@ header{
     justify-content: left;
     display: flex;
     padding: 15px 5vw;
-    margin-top: -1;
+    margin-top: -1px;
     color: #efce4a;
     font-weight: bold;
     margin-bottom: 0px;
@@ -563,12 +563,12 @@ header{
 
 .portolio-model-3{
     background-image: url("../imagens/servico3.png");
-    width: 22%;
+    width: 22.002%;
 }
 
 .portolio-model-4{
     background-image: url("../imagens/servico2.png");
-    width: 22%;
+    width: 22.002%;
     border-radius: 0 0 0 2px;
 }
 
@@ -602,6 +602,131 @@ header{
     margin-top: 0;
     text-align: justify;
     text-justify: inter-word;
+}
+
+/* Diagnostico */
+
+.diagnostico-section{
+    float: left;
+    position: relative;
+    width: 100%;
+    font-family: "Lato";
+    background-image: url("../imagens/diagnostico.png");
+    background-size: 100%;
+    background-position: center;
+    color: white;
+    background-color: gray;
+}
+
+.diagnostico-title{
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    font-weight: normal;
+    padding: 0;
+    margin: 15px 5vw;
+}
+
+.diagnostico-image{
+    height: 19px;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 0px 1px 0px 0px;
+}
+
+.diagnostico-description, .diagnostico-form{
+    margin: 0 5vw;
+}
+
+.diagnostico-form-input{
+    width: 70%;
+    background-color: #ffffff8a;
+    border-radius: 2px;
+    height: 2.2em;
+    border-width: 0px;
+    outline: none;
+    font-size: 1.1em;
+    box-shadow: 0px 0px 1px #ffffff8a;
+    padding: 4px;
+    color: #383838;
+    font-family: "Lato";
+    padding-left: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition:  all 0.2s ease-in-out;
+}
+
+.diagnostico-form-input:focus{
+    background-color: #ffffffcf;
+}
+
+.diagnostico-nome, .diagnostico-empresa{
+    width: 40%;
+}
+
+.diagnostico-enviar{
+    margin: 0.9vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #2171a9d4;
+    font-family: "LATO", sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9vw;
+    border-width: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease;
+    transition:  all 0.4s ease;
+    width: 10vw;
+    height: 2.5vw;
+    border-radius: 2px;
+}
+
+.diagnostico-enviar:hover{
+    background-color: #2171a9;
+}
+
+.diagnostico-enviar-image{
+    max-height: 54%;
+    max-width: 16%;
+    margin-right: 7px;
+}
+
+
+/* Mapa */
+.mapa-section{
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.gmap_canvas{
+    width: 100%;
+}
+
+
+/* Parceiros */
+
+.parceiros-section{
+    float: left;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.parceiros{
+    margin: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parceiros-image{
+    width: 10vw;
+    margin: 0 10vw;
 }
 
 /* Para Smartphones e telas menores que 600px */
@@ -639,6 +764,7 @@ header{
         margin-right: 5vw;
         position: relative;
     }
+
     .desk-menu-diagnostico-image{
         margin: 0;
         padding: 0;
