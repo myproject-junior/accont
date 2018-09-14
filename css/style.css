@@ -13,8 +13,28 @@ html, body{
 }
 
 button{
-    outline: none;
+    outline: none !important;
     border-width: 0;
+}
+
+h1{
+    font-size: 1.8em !important;
+}
+
+h2{
+    font-size: 1.6em !important;
+}
+
+h3{
+    font-size: 1.4em !important;
+}
+
+h4{
+    font-size: 1.2em !important;
+}
+
+h5{
+    font-size: 1em !important;
 }
 
 /* Parte superior/MENU */
@@ -51,8 +71,9 @@ header{
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    padding: 0;
+    margin-top: 2.7vh;
 }
+
 .desk-logo-a{
     width: 20%;
     position: relative;
@@ -113,9 +134,8 @@ header{
 .desk-menu-diagnostico{
     margin: 0.9vw;
     margin-left: 17vw;
-    background-color: #2171a9b5;
+    background-color: transparent;
     font-family: "LATO", sans-serif;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,17 +146,47 @@ header{
     transition:  all 0.4s ease;
     width: 10vw;
     height: 2.5vw;
+    color: #2171a9b5;
     border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2171a9b5;
 }
 
 .desk-menu-diagnostico:hover{
     background-color: #2171a9;
+    color: white;
+}
+
+.desk-menu-diagnostico:hover .desk-menu-diagnostico-image{
+    display: none;
+    opacity: 1;
+}
+
+.desk-menu-diagnostico:hover .desk-menu-diagnostico-image2{
+    display: block;
+    opacity: 1;
 }
 
 .desk-menu-diagnostico-image{
+    width: 100%;
     max-height: 54%;
     max-width: 16%;
     margin-right: 7px;
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+    opacity: 1;
+}
+
+.desk-menu-diagnostico-image2{
+    width: 100%;
+    max-height: 54%;
+    max-width: 16%;
+    margin-right: 7px;
+    display: none;
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+    opacity: 0;
 }
 
 /* Slider */
@@ -288,6 +338,7 @@ header{
     margin: 0px;
     font-family: "Lato";
     color: white;
+    padding: 3vh 0;
 }
 
 .processoseletivo-title{
@@ -309,7 +360,7 @@ header{
 }
 
 .processoseletivo-div{
-    padding: 15px 5vw;
+    padding: 0px 5vw;
 }
 
 .processoseletivo-description{
@@ -326,8 +377,8 @@ header{
     transform: translateX(-50%);
     background-color: transparent;
     color: white;
-    border-style: double;
-    border-width: 3px;
+    border-style: solid;
+    border-width: 1px;
     text-transform: uppercase;
     font-family: "LATO";
     font-weight: bold;
@@ -341,7 +392,7 @@ header{
 
 .processoseletivo-button:hover{
     background-color: white;
-    color: #1e72ab;
+    color: #619ac2;
     border-color: #1e72ab;
 }
 
@@ -355,6 +406,7 @@ header{
     margin: 0px;
     font-family: "Lato";
     background: #ffffffe6;
+    padding: 3vh 0;
 }
 
 .blog-articles{
@@ -460,7 +512,7 @@ header{
     background-image: url("../imagens/backgroundtexture.png");
     background-size: 50px;
     font-family: "Lato";
-    padding-bottom: 5vh;
+    padding: 3vh 0;
 }
 
 .quemsomos-title{
@@ -522,8 +574,9 @@ header{
     margin: 0;
     padding: 0;
     width: 90%;
-    padding: 5vh 5%;
+    padding: 3vh 5%;
     background-color: #dfdfdf;
+    box-sizing: content-box !important;
 }
 
 .portolio-model-1, .portolio-model-3, .portolio-model-5{
@@ -616,6 +669,7 @@ header{
     background-position: center;
     color: white;
     background-color: gray;
+    padding: 3vh 0;
 }
 
 .diagnostico-title{
