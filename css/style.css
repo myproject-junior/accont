@@ -142,8 +142,8 @@ header{
     font-size: 0.9vw;
     border-width: 0;
     cursor: pointer;
-    -webkit-transition: all 0.4s ease;
-    transition:  all 0.4s ease;
+    -webkit-transition: all 0.3s ease;
+    transition:  all 0.3s ease;
     width: 10vw;
     height: 2.5vw;
     color: #2171a9b5;
