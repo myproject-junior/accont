@@ -8,11 +8,6 @@ window.onscroll = function(){
     menuBarChange();
 };
 
-//Setar tamanho do mapa
-$(document).ready(function() {
-    document.querySelector("#gmap_canvas").setAttribute("width", window.innerWidth - 15);
-});
-
 //Quando clicar no menu
 function menuClick(){
     let deskButton = document.getElementsByClassName("desk-menu-button");

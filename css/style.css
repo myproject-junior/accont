@@ -6,37 +6,6 @@
     display: none;
 }
 
-/* Reset Basico */
-html, body{
-    margin: 0;
-    padding: 0;
-}
-
-button{
-    outline: none !important;
-    border-width: 0;
-}
-
-h1{
-    font-size: 1.8em !important;
-}
-
-h2{
-    font-size: 1.6em !important;
-}
-
-h3{
-    font-size: 1.4em !important;
-}
-
-h4{
-    font-size: 1.2em !important;
-}
-
-h5{
-    font-size: 1em !important;
-}
-
 /* Parte superior/MENU */
 header{
     background: linear-gradient(to bottom, rgba(0,0,0,0.5) , rgba(0,0,0,0.3), rgba(0,0,0,0.1));
@@ -267,8 +236,6 @@ header{
 
 .solucoes-servicos{
     display: flex;
-    padding: 4.4vw;
-    margin-bottom: 10vh;
     padding-top: 0px;
 }
 
@@ -290,42 +257,43 @@ header{
     border-width: 0px 1px 0px 0px;
 }
 
-.solucoes-servico{
+.solucao-container{
     padding: 0 1vw;
     width: 100%;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
 }
 
-.solucoes-servico-image{
+.solucao-image-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 13px;
+    border-width: 2px;
+    border-color: #212529;
+    border-style: solid;
+    border-radius: 100%;
+    margin-bottom: 1vh;
+}
+
+.solucao-image{
     width: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition:  all 0.2s ease;
-    border-radius: 2px;
 }
 
-
-.solucoes-servico::after{
-    width: 94%;
-    display: block;
-    color: white;
-    margin-bottom: -50%;
-    padding: 3%;
-    border-radius: 0 0 2px 2px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition:  all 0.2s ease-in-out;
-    opacity: 0;
-
+.solucao-title, .solucao-description{
+    text-align: center;
+    font-family: "Calibri";
+    font-weight: lighter;
 }
 
-.solucoes-servico:hover::after{
-    background: #47474787;
-    opacity: 1;
-    transform: translateY(-100%);
-}
-
-.solucoes-servico-title{
-    font-weight: normal;
-    margin: 5px;
+.solucao-title{
+    font-size: 2.3em !important;
 }
 
 /* Processo Seletivo */
@@ -411,7 +379,7 @@ header{
 
 .blog-articles{
     display: flex;
-    margin: 0 3.7vw;
+    margin: 0 3.77vw;
     padding-top: 0px;
     justify-content: center;
 }
@@ -557,16 +525,19 @@ header{
     margin: 0;
     position: absolute;
     top: 50%;
-    right: 9vw;
+    right: 5vw;
     transform: translateY(-50%);
 
 }
 
 .quemsomos-lema, .quemsomos-local, .quemsomos-description{
-    width: 55vw;
+    width: 60vw;
+}
+.quemsomos-description{
+    min-height: 18vh;
 }
 
-/* Parceiros */
+/* Portfolio */
 .portfolio-section{
     float: left;
     position: relative;
@@ -720,27 +691,27 @@ header{
 }
 
 .diagnostico-enviar{
-    margin: 0.9vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    background-color: #2171a9d4;
+    margin: 0.9vw 0;
+    background-color: #2171a9;
     font-family: "LATO", sans-serif;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.9vw;
-    border-width: 0;
+    font-size: 0.9em;
+    border-width: 1px;
+    border-color: #2171a9;
+    border-style: solid;
     cursor: pointer;
-    -webkit-transition: all 0.4s ease;
-    transition:  all 0.4s ease;
-    width: 10vw;
-    height: 2.5vw;
+    -webkit-transition: all 0.2s ease;
+    transition:  all 0.2s ease;
+    width: 10em;
+    height: 2.5em;
     border-radius: 2px;
 }
 
 .diagnostico-enviar:hover{
-    background-color: #2171a9;
+    box-shadow: 0px 0px 3px rgba(255,255,255,0.2);
 }
 
 .diagnostico-enviar-image{
@@ -757,7 +728,7 @@ header{
     width: 100%;
 }
 
-.gmap_canvas{
+#gmap_canvas{
     width: 100%;
 }
 
@@ -781,6 +752,70 @@ header{
 .parceiros-image{
     width: 10vw;
     margin: 0 10vw;
+}
+
+/* Footer */
+footer{
+    float: left;
+    position: relative;
+    background-color: white;
+    width: 100%;
+    padding: 3vh 0;
+}
+
+footer .ft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.3em;
+    width: 50em;
+    height: 4em;
+    width: 100%;
+}
+
+footer div img{
+    width: 2em;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-5px);
+    margin: 0 1.3em;
+}
+
+.footer-left{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .aside img{
+    width: 1.4em;
+    margin: 1.5em;
+}
+
+footer .aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+footer .aside li{
+    float: left;
+}
+
+footer .aside{
+    margin-left: 50%;
+    clear: both;
+    position: relative;
+    transform: translateX(-25%);
+}
+
+.copyright{
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 
 /* Para Smartphones e telas menores que 600px */
@@ -869,10 +904,105 @@ header{
     .blog-articles{
         flex-wrap: wrap;
     }
+
+    /* Quem Somos */
+    .quemsomos-lema, .quemsomos-local, .quemsomos-description{
+        width: 100%;
+    }
+
+    .quemsomos-logo{
+        display: none;
+    }
+
+    /* Portfolio */
+    .portolio-model-1, .portolio-model-3, .portolio-model-5{
+        float: inherit;
+    }
+
+    .portolio-model-2, .portolio-model-4{
+        float: inherit;
+    }
+
+    .portfolio-model{
+        height: 28vh !important;
+        background-size: 102%;
+        background-position: center;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition:  all 0.3s ease-in-out;
+        width: 100% !important;
+        margin: 4vh 0;
+    }
+
+    .portfolio-model:hover{
+        background-size: 102%;
+    }
+
+    .portfolio-content{
+        -webkit-transition: all 0.2s ease-in-out;
+        transition:  all 0.2s ease-in-out;
+        color: white;
+        background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.2));
+    }
+
+    .portfolio-model:hover .portfolio-content{
+        padding-bottom: 5px;
+        background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
+    }
+
+    /* Diagnostico */
+    .diagnostico-section{
+        background-size: auto;
+    }
+
+    .diagnostico-enviar{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .diagnostico-section input[type=text]{
+        width: 100%;
+    }
+
+    /* Mapa */
+    #gmap_canvas{
+        height: 70%;
+    }
+
 }
 
 @media all and (max-width: 600px){
     .slide{
         background-size: 100vh;
     }
+}
+/* Reset Basico */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    outline: none !important;
+    border-width: 0;
+}
+
+h1{
+    font-size: 1.8em !important;
+}
+
+h2{
+    font-size: 1.6em !important;
+}
+
+h3{
+    font-size: 1.4em !important;
+}
+
+h4{
+    font-size: 1.2em !important;
+}
+
+h5{
+    font-size: 1em !important;
 }
