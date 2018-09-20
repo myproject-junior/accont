@@ -1,175 +1,83 @@
-<meta charset="UTF-8">
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <title>Account</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 
 <body>
     <!-- Menu -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="nav-brand" href="#">
+                <img class="desk-logo" src="./imagens/logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <header class="superior-menu box-blue">
-
-        <img class="superior-menu-logo mobile" src="imagens/logoMobile.png" />
-
-        <div id="menu-desktop" class="menu desktop">
-
-            <ul>
-                <li>
-                    <img id="menu-logo" src="imagens/logo.png" />
-                </li>
-                <li>
-                    <button id="home-desktop">Home</button>
-                </li>
-                <li>
-                    <button id="solucoes-desktop">Soluções</button>
-                </li>
-                <li>
-                    <button id="processo-seletivo-desktop">Home</button>
-                </li>
-                <li>
-                    <button id="blog-desktop">Blog</button>
-                </li>
-                <li>
-                    <button id="quem-somos-desktop">Quem Somos</button>
-                </li>
-                <li>
-                    <button id="diagnostico-desktop">Diagnostico</button>
-                </li>
-            </ul>
-
-        </div>
-
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#solucoes">Soluções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#processoseletivo">Processo Seletivo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobrenos">Quem Somos</a>
+                    </li>
+                    <button class="btn btn-outline-primary" type="button">Diagnóstico</button>
+                </ul>
+            </div>
+        </nav>
     </header>
-
-    <div id="menu-mobile" class="menu mobile">
-        <img class="voltar-menu-image" src="imagens/voltar.svg">
-        <h1 class="menu-mobile-titulo">Menu</h1>
-        <ul class="menu-mobile-ul">
-            <li>
-                <button id="solucoes">Soluções</button>
-            </li>
-            <li>
-                <button id="processo-seletivo">Home</button>
-            </li>
-            <li>
-                <button id="blog">Blog</button>
-            </li>
-            <li>
-                <button id="quem-somos">Quem Somos</button>
-            </li>
-            <li>
-                <button id="portfolio">Portifólio</button>
-                </button>
-            </li>
-            <li>
-                <button id="parceiros">Parceiros</button>
-                </button>
-            </li>
-            <li>
-                <button id="diagnostico">Diagnostico</button>
-            </li>
-        </ul>
-        <aside>
-            <!-- Imagens e Link das redes Sociais -->
-            <ul>
-                <li>
-                    <a class="facebook" href="facebook.com">
-                        <img src="imagens/redessociais/facebook.svg"> </a>
-                </li>
-                <li>
-                    <a class="youtube" href="youtube.com">
-                        <img src="imagens/redessociais/youtube.svg"> </a>
-                </li>
-                <li>
-                    <a class="twitter" href="twitter.com">
-                        <img src="imagens/redessociais/twitter.svg"> </a>
-                </li>
-                <li>
-                    <a class="instagram" href="instagram.com">
-                        <img src="imagens/redessociais/instagram.svg"> </a>
-                </li>
-                <li>
-                    <a class="google-plus" href="plus.google.com">
-                        <img src="imagens/redessociais/googleplus.svg"> </a>
-                </li>
-            </ul>
-        </aside>
-
-    </div>
 
     <!-- slide superior -->
 
-    <section class="superior-slide">
+    <section class="slider">
+        <div id="slide" style="background-position: 0 0%;" class="slide slide1">
+        </div>
 
+        <div class="slide-box">
+            <img class="desk-logo-a" src="./imagens/logoa.png">
+            <h2 class="slide-box-title">Empresa Júnior de Contabilidade</h2>
+            <h4 class="slide-box-subtitle">A melhor empresa júnior de Fortaleza, depois da MyProject</h4>
+        </div>
     </section>
 
     <!-- Seção da solução de contabeis -->
 
-    <section class="solucao-contabeis-section">
-        <h1 class="section-title box-gray">Soluções Contábeis</h1>
+    <section class="solucoes-section">
+        <h1 class="solucoes-title"><img src="./imagens/solucoescontabeis.png" class="solucoes-image"> Soluções
+            Contábeis</h1>
 
         <!-- serviços -->
-        <div class="servicos-div">
-            <!-- primeiro serviço -->
-            <div class="servico esquerdo">
-                <h3>Nome do servico</h3>
-                <p>Lorem ipsum urna luctus vitae curae eleifend amet elit ligula curabitur
-                    quisque, himenaeos elementum mollis odio quis phasellus vehicula
-                    viverra sagittis bibendum, donec hac nec mauris purus interd</p>
-                <img src="img.img">
-            </div>
-            <!-- segundo serviço -->
-            <div class="servico direito">
-                <h3>Nome do servico</h3>
-                <p>Lorem ipsum urna luctus vitae curae eleifend amet elit ligula curabitur
-                    quisque, himenaeos elementum mollis odio quis phasellus vehicula
-                    viverra sagittis bibendum, donec hac nec mauris purus interd</p>
-                <img src="img.img">
-            </div>
-            <!-- terceiro serviço -->
-            <div class="servico esquerdo">
-                <h3>Nome do servico</h3>
-                <p>Lorem ipsum urna luctus vitae curae eleifend amet elit ligula curabitur
-                    quisque, himenaeos elementum mollis odio quis phasellus vehicula
-                    viverra sagittis bibendum, donec hac nec mauris purus interd</p>
-                <img src="img.img">
-            </div>
-            <!-- quarto serviço -->
-            <div class="servico direito">
-                <h3>Nome do servico</h3>
-                <p>Lorem ipsum urna luctus vitae curae eleifend amet elit ligula curabitur
-                    quisque, himenaeos elementum mollis odio quis phasellus vehicula
-                    viverra sagittis bibendum, donec hac nec mauris purus interd</p>
-                <img src="img.img">
-            </div>
-            <!-- quinto serviço -->
-            <div class="servico esquerdo desktop">
-                <h3>Nome do servico</h3>
-                <p>Lorem ipsum urna luctus vitae curae eleifend amet elit ligula curabitur
-                    quisque, himenaeos elementum mollis odio quis phasellus vehicula
-                    viverra sagittis bibendum, donec hac nec mauris purus interd</p>
-                <img src="img.img">
-            </div>
-            <!-- Sexto serviço -->
-            <div class="servico direito desktop">
-                <h3>Nome do servico</h3>
-                <p>Lorem ipsum urna luctus vitae curae eleifend amet elit ligula curabitur
-                    quisque, himenaeos elementum mollis odio quis phasellus vehicula
-                    viverra sagittis bibendum, donec hac nec mauris purus interd</p>
-                <img src="img.img">
-            </div>
+        <div class="solucoes-servicos">
+
         </div>
 
     </section>
 
     <!-- processo seletivo -->
-    <section class="processo-seletivo-section">
-        <h1 class="section-title box-gray">Processo Seletivo</h1>
-        <div class="conteudo">
-            <img src="imagens/sections/processoSeletivo.png" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+    <section class="processoseletivo-section">
+        <h1 class="processoseletivo-title"><img src="./imagens/processoseletivo.png" class="processoseletivo-image">
+            Processo Seletivo</h1>
+        <div class="processoseletivo-div">
+            <p class="processoseletivo-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
                 viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis
                 natoque penatibus et magnis dis parturient montes, nascetur ridiculus
@@ -178,137 +86,100 @@
                 dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
                 laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
                 commodo. Proin sodales pulvinar sic tempor.</p>
-            <button class="processo-seletivo-button " type="button">Participar</button>
+            <button class="processoseletivo-button" type="button">Participar</button>
         </div>
     </section>
+
     <!--blog -->
-    <section class="blog-section box-gray">
-        <h1 class="section-title">Blog</h1>
-        <!--primeira postagem -->
-        <article class="box-gray postagem">
-            <h2 class="article-title ">TITULO DO ARTIGO 01</h2>
-            <img src="" />
-            <aside class="postagem-footer">
-                <div class="visualizacao-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-visualizacao">000</p>
-                </div>
-                <div class="curtida-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-curtidas">000</p>
-                </div>
-                <div class="comentarios-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-comentarios">000</p>
-                </div>
-            </aside>
-        </article>
-        <!--segunda postagem -->
-        <article class="box-gray">
-            <h2 class="article-title ">TITULO DO ARTIGO 02</h2>
-            <img src="" />
-            <aside class="postagem-footer">
-                <div class="visualizacao-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-visualizacao">000</p>
-                </div>
-                <div class="curtida-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-curtidas">000</p>
-                </div>
-                <div class="comentarios-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-comentarios">000</p>
-                </div>
-            </aside>
-        </article>
-        <!--terceira postagem -->
-        <article class="box-gray">
-            <h2 class="article-title ">TITULO DO ARTIGO 03</h2>
-            <img src="" />
-            <aside class="postagem-footer">
-                <div class="visualizacao-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-visualizacao">000</p>
-                </div>
-                <div class="curtida-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-curtidas">000</p>
-                </div>
-                <div class="comentarios-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-comentarios">000</p>
-                </div>
-            </aside>
-        </article>
-        <!--quarta postagem -->
-        <article class="box-gray desktop">
-            <h2 class="article-title ">TITULO DO ARTIGO 04</h2>
-            <img src="" />
-            <aside class="postagem-footer">
-                <div class="visualizacao-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-visualizacao">000</p>
-                </div>
-                <div class="curtida-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-curtidas">000</p>
-                </div>
-                <div class="comentarios-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-comentarios">000</p>
-                </div>
-            </aside>
-        </article>
-        <!--quinta postagem -->
-        <article class="box-gray desktop">
-            <h2 class="article-title ">TITULO DO ARTIGO 05</h2>
-            <img src="" />
-            <aside class="postagem-footer">
-                <div class="visualizacao-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-visualizacao">000</p>
-                </div>
-                <div class="curtida-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-curtidas">000</p>
-                </div>
-                <div class="comentarios-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-comentarios">000</p>
-                </div>
-            </aside>
-        </article>
-        <!--Sexta postagem -->
-        <article class="box-gray desktop">
-            <h2 class="article-title ">TITULO DO ARTIGO 06</h2>
-            <img src="" />
-            <aside class="postagem-footer">
-                <div class="visualizacao-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-visualizacao">000</p>
-                </div>
-                <div class="curtida-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-curtidas">000</p>
-                </div>
-                <div class="comentarios-footer">
-                    <img src="olho.pmg">
-                    <p class="numero-comentarios">000</p>
-                </div>
-            </aside>
-        </article>
+    <section class="blog-section">
+        <h1 class="blog-title"><img src="./imagens/blog.png" class="blog-image"> Últimas Atualizações</h1>
+        <div class="blog-articles">
+            <!--primeira postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h3 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h3>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
+                    </div>
+                </aside>
+            </article>
+            <!--segunda postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h3 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h3>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
+                    </div>
+                </aside>
+            </article>
+            <!--terceira postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h3 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h3>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
+                    </div>
+                </aside>
+            </article>
+        </div>
+        <div class="blog-articles desktop">
+            <!--primeira postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h3 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h3>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
+                    </div>
+                </aside>
+            </article>
+            <!--segunda postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h3 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h3>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
+                    </div>
+                </aside>
+            </article>
+            <!--terceira postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h3 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h3>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
+                    </div>
+                </aside>
+            </article>
+        </div>
 
     </section>
 
     <!-- Imagens para o portfólio -->
-    <section class="quem-somos-section">
-        <h1 class="section-title box-white">Quem Somos</h1>
-        <div class="conteudo">
-            <img class="quem-somos-imagem">
-            <h2 class="quem-somos-conteudo-title">Accont</h2>
-            <h3 class="quem-somos-conteudo-subtitle">Empresa Júnio</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+    <section class="quemsomos-section">
+        <h1 class="quemsomos-title"><img src="./imagens/quemsomos.png" class="quemsomos-image"> Quem Somos</h1>
+        <div class="quemsomos-div">
+            <img class="quemsomos-logo" src="./imagens/logoc.png">
+            <h3 class="quemsomos-lema">Empresa Júnior de Contabilidade</h3>
+            <h4 class="quemsomos-local">UNIFOR, Rua sei la o quê, 000</h4>
+            <p class="quemsomos-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
                 viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis
                 natoque penatibus et magnis dis parturient montes, nascetur ridiculus
@@ -325,116 +196,150 @@
 
     <!-- Imagens para o portfólio -->
     <section class="portfolio-section">
-        <h1 class="section-title box-white">Portfolio</h1>
-        <div class="conteudo backgroundWhite">
-            <img class="porfolio-imagem" src="imagens/portfolio/imagem01.png">
-            <img class="porfolio-imagem" src="imagens/portfolio/imagem02.png">
-            <img class="porfolio-imagem" src="imagens/portfolio/imagem03.png">
-            <img class="porfolio-imagem" src="imagens/portfolio/imagem04.png">
-            <img class="porfolio-imagem desktop" src="imagens/portfolio/imagem05.png">
-            <img class="porfolio-imagem desktop" src="imagens/portfolio/imagem06.png">
-            <img class="porfolio-imagem desktop" src="imagens/portfolio/imagem07.png">
-            <img class="porfolio-imagem desktop" src="imagens/portfolio/imagem08.png">
+        <div class="portolio-model-1 portfolio-model">
+            <div class="portfolio-content">
+                <h1 class="portfolio-title">Empresa 01</h1>
+                <h3 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h3>
+            </div>
         </div>
+        <div class="portolio-model-2 portfolio-model">
+            <div class="portfolio-content">
+                <h1 class="portfolio-title">Empresa 02</h1>
+                <h3 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget, felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h3>
+            </div>
+        </div>
+        <div class="portolio-model-3 portfolio-model">
+            <div class="portfolio-content">
+                <h1 class="portfolio-title">Empresa 03</h1>
+                <h3 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h3>
+            </div>
+        </div>
+        <div class="portolio-model-4 portfolio-model">
+            <div class="portfolio-content">
+                <h1 class="portfolio-title">Empresa 04</h1>
+                <h3 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h3>
+            </div>
+        </div>
+        <div class="portolio-model-5 portfolio-model">
+            <div class="portfolio-content">
+                <h1 class="portfolio-title">Empresa 05</h1>
+                <h3 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget, felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Diagnostico -->
+    <section class="diagnostico-section">
+        <h1 class="diagnostico-title"><img src="./imagens/diagnostico.svg" class="diagnostico-image"> Faça o
+            diagnóstico da sua Empresa!</h1>
+        <!-- Titulo Diagnostico -->
+        <!-- Mini Descrição abaixo do título -->
+        <p class="diagnostico-description">
+            Faça já o diagnostico da sua empresa de forma rápida, eficiente e, acima de tudo,
+            gratuita! Clique no botão abaixo, é rápido e entraremos em contato com
+            você o mais breve possível para que possa conhecer nossas soluções.
+        </p><br>
+        <form class="diagnostico-form" action="javaScript:sendForm()" method="POST">
+            <span class="diagnostico-form-info">Email</span><br>
+            <input class="diagnostico-form-input" type="text" placeholder="Email"><br><br>
+
+            <span class="diagnostico-form-info">Nome</span><br>
+            <input class="diagnostico-form-input diagnostico-nome" type="text" placeholder="Seu Nome"><br><br>
+
+            <span class="diagnostico-form-info">Nome da sua Empresa</span><br>
+            <input class="diagnostico-form-input diagnostico-empresa" type="text" placeholder="Sua Empresa"><br><br>
+
+            <!-- <span class="diagnostico-form-info">Porte da Empresa</span><br>
+                <input id="diag-radio1" class="diagnostico-form-input-radio" type="radio" name="porte" value="1" checked> <label for="diag-radio1">Pequeno Porte</label>
+                <input id="diag-radio2" class="diagnostico-form-input-radio" type="radio" name="porte" value="2"> <label for="diag-radio2">Médio Porte</label>
+                <input id="diag-radio3" class="diagnostico-form-input-radio" type="radio" name="porte" value="3"> <label for="diag-radio3">Grande Porte</label><br> -->
+            <button class="diagnostico-enviar"><img class="diagnostico-enviar-image" src="./imagens/lupa.svg">Diagnosticar</button>
+        </form>
+        <!-- Botão para abrir popup de diagnostico -->
     </section>
 
     <!-- Parceiros -->
     <section class="parceiros-section">
-        <h1 class="section-title">Parceiros</h1>
-        <!-- Titulo de Parceiros -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-            laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
-            commodo.
-        </p>
-        <div id="slider">
-            <!-- Mini slider com imagens dos parceiros -->
-
+        <div class="parceiros">
+            <img class="parceiros-image" src="./imagens/parceiro1.png">
+            <img class="parceiros-image" src="./imagens/parceiro2.png">
+            <img class="parceiros-image" src="./imagens/parceiro3.png">
         </div>
     </section>
 
-    <!-- Diagnostico -->
-    <section class="diagnostico-section box-gray">
-        <h1 class="section-title">Diagnóstico</h1>
-        <!-- Titulo Diagnostico -->
-        <!-- Mini Descrição abaixo do título -->
-        <p>
-            Faça já o diagnosti co da sua empresa de forma rápida, eficiente e, acima de tudo,
-            gratuita! Click no botão abaixo, é rápido e entraremos em contato com
-            você o mais breve possível para que possa conhecer nossas soluções.
-        </p>
 
-        <button class="diagnostico-botao">Diagnóstico</button>
-        <!-- Botão para abrir popup de diagnostico -->
-        <div class="mapa">
-            <!-- Mapa da localização da Accont -->
-        </div>
+    <!-- Mapa -->
+    <section class="mapa-section">
+        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=accont%2C%20ufc&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </section>
 
-    <!-- Contato -->
-    <section class="contato-section box-gray">
-        <img class="contato-section-logo" src="imagens/logo.png">
+    <!-- Parte Inferior (Copyright) -->
+    <footer>
+        <img src="imagens/logo.png">
         <!-- Logo da parte inferior (Abaixo do Mapa)-->
-        <div class="endereco">
+        <div>
             <!-- Endereço -->
-            <img class="endereco-image" src="imagens/contato/local.svg">
+            <img src="imagens/contato/local.svg">
             <!-- Imagem Ilustrativa de Localização -->
             <p>Av. da Universidade, 2431
                 <br>Cep.: 60020-180
                 <br>Fortaleza-Ceará</p>
             <!-- Localização Real -->
         </div>
-        <div class="telefone">
+        <div>
             <!-- Telefone -->
-            <img class="telefone-image" src="imagens/contato/telefone.svg">
+            <img src="imagens/contato/telefone.svg">
             <!-- Imagem do telefone -->
             <p>(85) 98507-3856</p>
             <!-- Telefone Real -->
         </div>
-        <div class="email">
-            <img class="email-image" src="imagens/contato/email.svg">
+        <div>
+            <img src="imagens/contato/email.svg">
             <!-- Imagem de email -->
             <p>account@ufc.ce</p>
             <!-- Email Real -->
         </div>
-        <div class="custom-hr" />
         <!-- Barrinha Preta Height=1px -->
         <aside>
             <!-- Imagens e Link das redes Sociais -->
             <ul>
                 <li>
-                    <a class="facebook" href="facebook.com">
+                    <a href="facebook.com">
                         <img src="imagens/redessociais/facebook.svg"> </a>
                 </li>
                 <li>
-                    <a class="youtube" href="youtube.com">
+                    <a href="youtube.com">
                         <img src="imagens/redessociais/youtube.svg"> </a>
                 </li>
                 <li>
-                    <a class="twitter" href="twitter.com">
+                    <a href="twitter.com">
                         <img src="imagens/redessociais/twitter.svg"> </a>
                 </li>
                 <li>
-                    <a class="instagram" href="instagram.com">
+                    <a href="instagram.com">
                         <img src="imagens/redessociais/instagram.svg"> </a>
                 </li>
                 <li>
-                    <a class="google-plus" href="plus.google.com">
+                    <a href="plus.google.com">
                         <img src="imagens/redessociais/googleplus.svg"> </a>
                 </li>
             </ul>
         </aside>
-    </section>
-
-    <!-- Parte Inferir (Copyright) -->
-    <footer class="box-dark-gray">
         <p>Copyright © 2018
             <strong>Account Empresa Junior UFC</strong> by MyProject
         </p>
-
-        <p>Tudo Massaaaaa22222 a revanche 3</p>
-
     </footer>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/code.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
