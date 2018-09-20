@@ -6,8 +6,5 @@ Accont
 Status: \
 Desenvolvimento...
 
+Branch para configuração e teste do menu inicial responsivo usando Bootstrap
 
-1. Menu Inicial
-2. Rodape
-3. Serviços
-4. Ajuste do Scroll
