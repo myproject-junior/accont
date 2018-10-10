@@ -1,324 +1,361 @@
+<!doctype html>
 <meta charset="UTF-8">
 <html>
-    <head>
-        <title>Account</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="./bootstrap/bootstrap-4.1.3-dist/css/bootstrap.min.css" type="text/css" />
-        <script charset="UTF-8" src="./bootstrap/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <script charset="UTF-8" src="./js/code.js"></script>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
-        <link charset="UTF-8" rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato"/>
-        <link rel="icon" type="image/png" href="./imagens/logoa.png" />
-    </head>
 
-    <body>
-        <!-- Menu -->
-        <header>
-            <div class="desk-menu-div">
-                <img class="desk-logo" src="./imagens/logo.png" />
-                <ul class="desk-menu-ul">
-                    <li class="desktop">
-                        <a href="#inicio"><button class="desk-menu-button">INÍCIO</button></a>
-                    </li>
-                    <li class="desktop">
-                        <a href="#solucoes"><button class="desk-menu-button">SOLUÇÕES</button></a>
-                    </li>
-                    <li class="desktop">
-                        <a href="#processoseletivo"><button class="desk-menu-button">PROCESSO SELETIVO</button></a>
-                    </li>
-                    <li class="desktop">
-                        <a href="#blog"><button class="desk-menu-button">BLOG</button></a>
-                    </li>
-                    <li class="desktop">
-                        <a href="#sobrenos"><button class="desk-menu-button">QUEM SOMOS</button></a>
-                    </li>
-                </ul>
-                <button class="desk-menu-diagnostico"><img class="desk-menu-diagnostico-image" src="./imagens/lupa.svg"><img class="desk-menu-diagnostico-image2" src="./imagens/lupa2.svg">DIAGNOSTICO</button>
+<head>
+    <title>Accont</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" type="text/css" />
+    <script charset="UTF-8" src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <link charset="UTF-8" rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <link rel="icon" type="image/png" href="./imagens/logoa.png" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!--<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+</head>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <div class="desk-menu-div">
+            <img class="desk-logo" src="./imagens/logo.png" />
+            <ul class="desk-menu-ul">
+                <li class="desktop">
+                    <a href="#inicio"><button class="desk-menu-button">INÍCIO</button></a>
+                </li>
+                <li class="desktop">
+                    <a href="#solucoes"><button class="desk-menu-button">SOLUÇÕES</button></a>
+                </li>
+                <li class="desktop">
+                    <a href="#processoseletivo"><button class="desk-menu-button">PROCESSO SELETIVO</button></a>
+                </li>
+                <li class="desktop">
+                    <a href="#blog"><button class="desk-menu-button">BLOG</button></a>
+                </li>
+                <li class="desktop">
+                    <a href="#sobrenos"><button class="desk-menu-button">QUEM SOMOS</button></a>
+                </li>
+            </ul>
+            <button class="desk-menu-diagnostico"><img class="desk-menu-diagnostico-image" src="./imagens/lupa.svg"><img
+                    class="desk-menu-diagnostico-image2" src="./imagens/lupa2.svg">DIAGNOSTICO</button>
+        </div>
+    </header>
+
+    <!-- slide superior -->
+
+    <section class="slider">
+        <div id="slide" style="background-position: 0 0%;" class="slide slide1">
+        </div>
+
+        <div class="slide-box">
+            <img class="desk-logo-a" src="./imagens/logoa.png">
+            <h2 class="slide-box-title">Empresa Júnior de Contabilidade</h2>
+            <h4 class="slide-box-subtitle">A melhor empresa júnior de Fortaleza, depois da MyProject</h4>
+        </div>
+    </section>
+
+    <!-- Seção da solução de contabeis -->
+
+    <section class="solucoes-section">
+        <h1 class="solucoes-title"><img src="./imagens/solucoescontabeis.png" class="solucoes-image"> Soluções
+            Contábeis</h1>
+
+        <!-- serviços -->
+        <div class="solucoes-servicos">
+            <div class="solucao-container">
+                <div class="solucao-image-content">
+                    <img class="solucao-image" src="./imagens/servico1.svg">
+                </div>
+                <h1 class="solucao-title">Acessoria Contábel</h1>
+                <h3 class="solucao-description">- Coisa Tal<br> - Outra Coisa <br> - Mais uma coisa</h3>
             </div>
-        </header>
-
-        <!-- slide superior -->
-
-        <section class="slider">
-            <div id="slide" style="background-position: 0 0%;" class="slide slide1">
+            <div class="solucao-container">
+                <div class="solucao-image-content">
+                    <img class="solucao-image" src="./imagens/servico2.svg">
+                </div>
+                <h1 class="solucao-title">Consultoria para MEI</h1>
+                <h3 class="solucao-description">- Coisa Tal<br> - Outra Coisa <br> - Mais uma coisa</h3>
+            </div>
+            <div class="solucao-container">
+                <div class="solucao-image-content">
+                    <img class="solucao-image" src="./imagens/servico3.svg">
+                </div>
+                <h1 class="solucao-title">Servico1</h1>
+                <h3 class="solucao-description">- Coisa Tal<br> - Outra Coisa <br> - Mais uma coisa <br> - Mais uma
+                    coisa</h3>
             </div>
 
-            <div class="slide-box">
-                <img class="desk-logo-a" src="./imagens/logoa.png">
-                <h2 class="slide-box-title">Empresa Júnior de Contabilidade</h2>
-                <h4 class="slide-box-subtitle">A melhor empresa júnior de Fortaleza, depois da MyProject</h4>
-            </div>
-        </section>
+        </div>
 
-        <!-- Seção da solução de contabeis -->
+    </section>
 
-        <section class="solucoes-section">
-            <h1 class="solucoes-title"><img src="./imagens/solucoescontabeis.png" class="solucoes-image"> Soluções Contábeis</h1>
+    <!-- processo seletivo -->
+    <section class="processoseletivo-section">
+        <h1 class="processoseletivo-title"><img src="./imagens/processoseletivo.png" class="processoseletivo-image">
+            Processo Seletivo</h1>
+        <div class="processoseletivo-div">
+            <p class="processoseletivo-description">Para você que deseja fazer parte da nossa EJ, nós abrimos Processos
+                Seletivos todo semestre! Procuramos líderes com visão a longo alcance, pessoas compromissadas com
+                agilidade para alçar vôo e protagonistas com atitude para tomar os céus.</p>
+            <button class="processoseletivo-button" type="button">Participar</button>
+        </div>
+    </section>
 
-            <!-- serviços -->
-            <div class="solucoes-servicos">
-                <div class="solucao-container">
-                    <div class="solucao-image-content">
-                        <img class="solucao-image" src="./imagens/servico1.svg">
+    <!--blog -->
+    <section class="blog-section">
+        <h1 class="blog-title"><img src="./imagens/blog.png" class="blog-image"> Últimas Atualizações</h1>
+        <div class="blog-articles">
+            <!--primeira postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h4>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
                     </div>
-                    <h1 class="solucao-title">Acessoria Contábel</h1>
-                    <h3 class="solucao-description">- Coisa Tal<br> - Outra Coisa <br> - Mais uma coisa</h3>
-                </div>
-                <div class="solucao-container">
-                    <div class="solucao-image-content">
-                        <img class="solucao-image" src="./imagens/servico2.svg">
+                </aside>
+            </article>
+            <!--segunda postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h4>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
                     </div>
-                    <h1 class="solucao-title">Consultoria para MEI</h1>
-                    <h3 class="solucao-description">- Coisa Tal<br> - Outra Coisa <br> - Mais uma coisa</h3>
-                </div>
-                <div class="solucao-container">
-                    <div class="solucao-image-content">
-                        <img class="solucao-image" src="./imagens/servico3.svg">
+                </aside>
+            </article>
+            <!--terceira postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h4>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
                     </div>
-                    <h1 class="solucao-title">Servico1</h1>
-                    <h3 class="solucao-description">- Coisa Tal<br> - Outra Coisa <br> - Mais uma coisa <br> - Mais uma coisa</h3>
-                </div>
+                </aside>
+            </article>
+        </div>
+        <div class="blog-articles desktop">
+            <!--primeira postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h4>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
+                    </div>
+                </aside>
+            </article>
+            <!--segunda postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h4>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
+                    </div>
+                </aside>
+            </article>
+            <!--terceira postagem -->
+            <article class="blog-article">
+                <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
+                <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                    mollis orci.</h4>
+                <aside class="blog-article-aside">
+                    <div class="blog-aside-element">
+                        <p class="blog-aside-views">1203 Visualizações</p>
+                        <p class="blog-aside-comments"> 300 Comentários</p>
+                    </div>
+                </aside>
+            </article>
+        </div>
 
-            </div>
+    </section>
 
-        </section>
+    <!-- Imagens para o portfólio -->
+    <section class="quemsomos-section">
+        <h1 class="quemsomos-title"><img src="./imagens/quemsomos.png" class="quemsomos-image"> Quem Somos</h1>
+        <div class="quemsomos-div">
+            <img class="quemsomos-logo" src="./imagens/logoc.png">
+            <h3 class="quemsomos-lema">Empresa Júnior de Contabilidade</h3>
+            <h4 class="quemsomos-local">UNIFOR, Rua sei la o quê, 000</h4>
+            <p class="quemsomos-description">A Accont é a Empresa Júnior do Curso de Ciências Contábeis da Universidade
+                Federal do Ceará (UFC), que foi fundada em 2014 como um projeto criado pelos estudantes do curso, que
+                visa proporcionar o crescimento educacional, pessoal e profissional dos nossos membros. Atuamos com
+                soluções contábeis para regularizar e ajudar a gerir negócios. Somos uma associação sem fins lucrativos
+                que investe o retorno financeiro em treinamento e capacitação, ou seja, não trabalhamos por dinheiro e
+                sim por um propósito!</p>
+        </div>
+    </section>
 
-        <!-- processo seletivo -->
-        <section class="processoseletivo-section">
-            <h1 class="processoseletivo-title"><img src="./imagens/processoseletivo.png" class="processoseletivo-image"> Processo Seletivo</h1>
-            <div class="processoseletivo-div">
-                <p class="processoseletivo-description">Para você que deseja fazer parte da nossa EJ, nós abrimos Processos Seletivos todo semestre! Procuramos líderes com visão a longo alcance, pessoas compromissadas com agilidade para alçar vôo e protagonistas com atitude para tomar os céus.</p>
-                <button class="processoseletivo-button" type="button">Participar</button>
+    <!-- Imagens para o portfólio -->
+    <section class="portfolio-section">
+        <div class="portolio-model-1 portfolio-model">
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Empresa 01</h2>
+                <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h5>
             </div>
-        </section>
+        </div>
+        <div class="portolio-model-2 portfolio-model">
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Empresa 02</h2>
+                <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget, felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h5>
+            </div>
+        </div>
+        <div class="portolio-model-3 portfolio-model">
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Empresa 03</h2>
+                <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h5>
+            </div>
+        </div>
+        <div class="portolio-model-4 portfolio-model">
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Empresa 04</h2>
+                <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h5>
+            </div>
+        </div>
+        <div class="portolio-model-5 portfolio-model">
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Empresa 05</h2>
+                <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget, felis tellus mollis orci, sed rhoncus
+                    pronin sapien nunc accuan eget.</h5>
+            </div>
+        </div>
+    </section>
+    <!-- Diagnostico -->
+    <section class="diagnostico-section">
+        <h1 class="diagnostico-title"><img src="./imagens/diagnostico.svg" class="diagnostico-image"> Faça o
+            diagnóstico da sua Empresa!</h1>
+        <!-- Titulo Diagnostico -->
+        <!-- Mini Descrição abaixo do título -->
+        <p class="diagnostico-description">
+            Faça já o diagnostico da sua empresa de forma rápida, eficiente e, acima de tudo,
+            gratuita! Clique no botão abaixo, é rápido e entraremos em contato com
+            você o mais breve possível para que possa conhecer nossas soluções.
+        </p><br>
+        <form class="diagnostico-form" action="javaScript:sendForm()" method="POST">
+            <span class="diagnostico-form-info">Email</span><br>
+            <input class="diagnostico-form-input" type="text" placeholder="Email"><br><br>
 
-        <!--blog -->
-        <section class="blog-section">
-            <h1 class="blog-title"><img src="./imagens/blog.png" class="blog-image"> Últimas Atualizações</h1>
-            <div class="blog-articles">
-                <!--primeira postagem -->
-                <article class="blog-article">
-                    <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
-                    <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
-                        mollis orci.</h4>
-                    <aside class="blog-article-aside">
-                        <div class="blog-aside-element">
-                            <p class="blog-aside-views">1203 Visualizações</p>
-                            <p class="blog-aside-comments"> 300 Comentários</p>
-                        </div>
-                    </aside>
-                </article>
-                <!--segunda postagem -->
-                <article class="blog-article">
-                    <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
-                    <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
-                        mollis orci.</h4>
-                    <aside class="blog-article-aside">
-                        <div class="blog-aside-element">
-                            <p class="blog-aside-views">1203 Visualizações</p>
-                            <p class="blog-aside-comments"> 300 Comentários</p>
-                        </div>
-                    </aside>
-                </article>
-                <!--terceira postagem -->
-                <article class="blog-article">
-                    <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
-                    <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
-                        mollis orci.</h4>
-                    <aside class="blog-article-aside">
-                        <div class="blog-aside-element">
-                            <p class="blog-aside-views">1203 Visualizações</p>
-                            <p class="blog-aside-comments"> 300 Comentários</p>
-                        </div>
-                    </aside>
-                </article>
-            </div>
-            <div class="blog-articles desktop">
-                <!--primeira postagem -->
-                <article class="blog-article">
-                    <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
-                    <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
-                        mollis orci.</h4>
-                    <aside class="blog-article-aside">
-                        <div class="blog-aside-element">
-                            <p class="blog-aside-views">1203 Visualizações</p>
-                            <p class="blog-aside-comments"> 300 Comentários</p>
-                        </div>
-                    </aside>
-                </article>
-                <!--segunda postagem -->
-                <article class="blog-article">
-                    <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
-                    <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
-                        mollis orci.</h4>
-                    <aside class="blog-article-aside">
-                        <div class="blog-aside-element">
-                            <p class="blog-aside-views">1203 Visualizações</p>
-                            <p class="blog-aside-comments"> 300 Comentários</p>
-                        </div>
-                    </aside>
-                </article>
-                <!--terceira postagem -->
-                <article class="blog-article">
-                    <div class="blog-article-image" style="background-image: url('./imagens/artigo1.jpg');"></div>
-                    <h4 class="blog-article-title">Nam fermentum, nulla luctus pharetra vulputate, felis tellus
-                        mollis orci.</h4>
-                    <aside class="blog-article-aside">
-                        <div class="blog-aside-element">
-                            <p class="blog-aside-views">1203 Visualizações</p>
-                            <p class="blog-aside-comments"> 300 Comentários</p>
-                        </div>
-                    </aside>
-                </article>
-            </div>
+            <span class="diagnostico-form-info">Nome</span><br>
+            <input class="diagnostico-form-input diagnostico-nome" type="text" placeholder="Seu Nome"><br><br>
 
-        </section>
+            <span class="diagnostico-form-info">Nome da sua Empresa</span><br>
+            <input class="diagnostico-form-input diagnostico-empresa" type="text" placeholder="Sua Empresa"><br><br>
 
-        <!-- Imagens para o portfólio -->
-        <section class="quemsomos-section">
-            <h1 class="quemsomos-title"><img src="./imagens/quemsomos.png" class="quemsomos-image"> Quem Somos</h1>
-            <div class="quemsomos-div">
-                <img class="quemsomos-logo" src="./imagens/logoc.png">
-                <h3 class="quemsomos-lema">Empresa Júnior de Contabilidade</h3>
-                <h4 class="quemsomos-local">UNIFOR, Rua sei la o quê, 000</h4>
-                <p class="quemsomos-description">A Accont é a Empresa Júnior do Curso de Ciências Contábeis da Universidade Federal do Ceará (UFC), que foi fundada em 2014 como um projeto criado pelos estudantes do curso, que visa proporcionar o crescimento educacional, pessoal e profissional dos nossos membros. Atuamos com soluções contábeis para regularizar e ajudar a gerir negócios. Somos uma associação sem fins lucrativos que investe o retorno financeiro em treinamento e capacitação, ou seja, não trabalhamos por dinheiro e sim por um propósito!</p>
-            </div>
-        </section>
-
-        <!-- Imagens para o portfólio -->
-        <section class="portfolio-section">
-            <div class="portolio-model-1 portfolio-model">
-                <div class="portfolio-content">
-                    <h2 class="portfolio-title">Empresa 01</h2>
-                    <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
-                        pronin sapien nunc accuan eget.</h5>
-                </div>
-            </div>
-            <div class="portolio-model-2 portfolio-model">
-                <div class="portfolio-content">
-                    <h2 class="portfolio-title">Empresa 02</h2>
-                    <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
-                        pronin sapien nunc accuan eget, felis tellus mollis orci, sed rhoncus
-                        pronin sapien nunc accuan eget.</h5>
-                </div>
-            </div>
-            <div class="portolio-model-3 portfolio-model">
-                <div class="portfolio-content">
-                    <h2 class="portfolio-title">Empresa 03</h2>
-                    <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
-                        pronin sapien nunc accuan eget.</h5>
-                </div>
-            </div>
-            <div class="portolio-model-4 portfolio-model">
-                <div class="portfolio-content">
-                    <h2 class="portfolio-title">Empresa 04</h2>
-                    <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
-                        pronin sapien nunc accuan eget.</h5>
-                </div>
-            </div>
-            <div class="portolio-model-5 portfolio-model">
-                <div class="portfolio-content">
-                    <h2 class="portfolio-title">Empresa 05</h2>
-                    <h5 class="portfolio-description">felis tellus mollis orci, sed rhoncus
-                        pronin sapien nunc accuan eget, felis tellus mollis orci, sed rhoncus
-                        pronin sapien nunc accuan eget.</h5>
-                </div>
-            </div>
-        </section>
-        <!-- Diagnostico -->
-        <section class="diagnostico-section">
-            <h1 class="diagnostico-title"><img src="./imagens/diagnostico.svg" class="diagnostico-image"> Faça o diagnóstico da sua Empresa!</h1>
-            <!-- Titulo Diagnostico -->
-            <!-- Mini Descrição abaixo do título -->
-            <p class="diagnostico-description">
-                Faça já o diagnostico da sua empresa de forma rápida, eficiente e, acima de tudo,
-                gratuita! Clique no botão abaixo, é rápido e entraremos em contato com
-                você o mais breve possível para que possa conhecer nossas soluções.
-            </p><br>
-            <form class="diagnostico-form" action="javaScript:sendForm()" method="POST">
-                <span class="diagnostico-form-info">Email</span><br>
-                <input class="diagnostico-form-input" type="text" placeholder="Email"><br><br>
-
-                <span class="diagnostico-form-info">Nome</span><br>
-                <input class="diagnostico-form-input diagnostico-nome" type="text" placeholder="Seu Nome"><br><br>
-
-                <span class="diagnostico-form-info">Nome da sua Empresa</span><br>
-                <input class="diagnostico-form-input diagnostico-empresa" type="text" placeholder="Sua Empresa"><br><br>
-
-                <!-- <span class="diagnostico-form-info">Porte da Empresa</span><br>
+            <!-- <span class="diagnostico-form-info">Porte da Empresa</span><br>
                 <input id="diag-radio1" class="diagnostico-form-input-radio" type="radio" name="porte" value="1" checked> <label for="diag-radio1">Pequeno Porte</label>
                 <input id="diag-radio2" class="diagnostico-form-input-radio" type="radio" name="porte" value="2"> <label for="diag-radio2">Médio Porte</label>
                 <input id="diag-radio3" class="diagnostico-form-input-radio" type="radio" name="porte" value="3"> <label for="diag-radio3">Grande Porte</label><br> -->
-                <button class="diagnostico-enviar"><img class="diagnostico-enviar-image" src="./imagens/lupa2.svg">DIAGNOSTICO</button>
-            </form>
-            <!-- Botão para abrir popup de diagnostico -->
-        </section>
+            <button class="diagnostico-enviar"><img class="diagnostico-enviar-image" src="./imagens/lupa2.svg">DIAGNOSTICO</button>
+        </form>
+        <!-- Botão para abrir popup de diagnostico -->
+    </section>
 
-        <!-- Parceiros -->
-        <section class="parceiros-section">
+    <!-- Parceiros -->
+    <section class="parceiros-section">
+        <div>
+            <img src="imagens/parcerias/parceria_01.png" alt="parceria-um">
+        </div>
+        <div>
+            <img src="imagens/parcerias/parceria_02.png" alt="parceria-dois">
+        </div>
+        <div>
+            <img src="imagens/parcerias/parceria_03.png" alt="parceria-tres">
+        </div>
+        <div>
+            <img src="imagens/parcerias/parceria_04.png" alt="parceria-quatro">
+        </div>
+        <div>
+            <img src="imagens/parcerias/parceria_05.png" alt="parceria-cinco">
+        </div>
+        <div>
+            <img src="imagens/parcerias/parceria_06.png" alt="parceria-seis">
+        </div>
+    </section>
 
-        </section>
+    <!-- Mapa -->
 
-        <!-- Mapa -->
-        <section class="mapa-section">
-            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=accont%2C%20ufc&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-        </section>
+    <section class="mapa-section">
+        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=accont%2C%20ufc&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" marginheight="0" marginwidth="0"></iframe>
+    </section>
 
-        <!-- Parte Inferior (Copyright) -->
-        <footer>
-            <div class="footer-left">
-                <div class="adress-div ft">
-                    <!-- Endereço -->
-                    <img class="adress-img" src="./imagens/localizacao.svg">
-                    <!-- Imagem Ilustrativa de Localização -->
-                    <p class="adress">Av. da Universidade, 2431
-                        <br>Cep.: 60020-180
-                        <br>Fortaleza-Ceará</p>
-                    <!-- Localização Real -->
-                </div>
-                <div class="phone-div ft">
-                    <!-- Telefone -->
-                    <img src="./imagens/contato.svg">
-                    <!-- Imagem do telefone -->
-                    <p>(85) 98507-3856</p>
-                    <!-- Telefone Real -->
-                </div>
-                <div class="email-div ft">
-                    <img src="./imagens/email.svg">
-                    <!-- Imagem de email -->
-                    <p>account@ufc.ce</p>
-                    <!-- Email Real -->
-                </div>
+    <!-- Parte Inferior (Copyright) -->
+    <footer>
+        <div class="footer-left">
+            <div class="adress-div ft">
+                <!-- Endereço -->
+                <img class="adress-img" src="./imagens/localizacao.svg">
+                <!-- Imagem Ilustrativa de Localização -->
+                <p class="adress">Av. da Universidade, 2431
+                    <br>Cep.: 60020-180
+                    <br>Fortaleza-Ceará</p>
+                <!-- Localização Real -->
             </div>
-            <div class="aside">
-                <!-- Imagens e Link das redes Sociais -->
-                <ul>
-                    <li>
-                        <a href="https://facebook.com/accontej" target="_blank">
-                            <img src="./imagens/facebook.svg"> </a>
-                    </li>
-                    <li>
-                        <a href="https://youtube.com" target="_blank">
-                            <img src="./imagens/youtube.svg"> </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_blank">
-                            <img src="./imagens/twitter.svg"> </a>
-                    </li>
-                    <li>
-                        <a href="http://instagram.com/accontej" target="_blank">
-                            <img src="./imagens/instagram.svg"> </a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com" target="_blank">
-                            <img src="./imagens/google-plus.svg"> </a>
-                    </li>
-                </ul>
-            </div><br>
-            <p class="copyright">Copyright © 2018
-                <strong>Accont Empresa Junior UFC</strong> by MyProject
-            </p>
-        </footer>
-    </body>
+            <div class="phone-div ft">
+                <!-- Telefone -->
+                <img src="./imagens/contato.svg">
+                <!-- Imagem do telefone -->
+                <p>(85) 98507-3856</p>
+                <!-- Telefone Real -->
+            </div>
+            <div class="email-div ft">
+                <img src="./imagens/email.svg">
+                <!-- Imagem de email -->
+                <p>account@ufc.ce</p>
+                <!-- Email Real -->
+            </div>
+        </div>
+        <div class="aside">
+            <!-- Imagens e Link das redes Sociais -->
+            <ul>
+                <li>
+                    <a href="https://facebook.com/accontej" target="_blank">
+                        <img src="./imagens/facebook.svg"> </a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="./imagens/youtube.svg"> </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="./imagens/twitter.svg"> </a>
+                </li>
+                <li>
+                    <a href="http://instagram.com/accontej" target="_blank">
+                        <img src="./imagens/instagram.svg"> </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com" target="_blank">
+                        <img src="./imagens/google-plus.svg"> </a>
+                </li>
+            </ul>
+        </div><br>
+        <p class="copyright">Copyright © 2018
+            <strong>Accont Empresa Junior UFC</strong> by MyProject
+        </p>
+    </footer>
+    <script src="js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
 </html>

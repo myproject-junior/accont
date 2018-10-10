@@ -91,3 +91,11 @@ if((window.orientation == 90) || (window.orientation == -90)){
     let y = document.getElementsByClassName("clube");
     for (let k = 0; k < y.length; k++) if(y[k].textContent = "FOR") [k].innerHTML = "Fortaleza";
 }
+
+$(document).ready(function(){
+    $('.parceiros-section').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3
+    });
+});
