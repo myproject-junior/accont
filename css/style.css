@@ -30,9 +30,10 @@ header{
 
 .desk-logo{
     max-height: 3.2vw;
-    margin-right: 17vw;
     height: 8vh;
-    float: left;
+
+    position: absolute;
+    left: 5vw;
 }
 
 .desk-menu-ul{
@@ -40,7 +41,9 @@ header{
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    margin-top: 2.7vh;
+    margin: 0;
+    padding: 0;
+    height: 9vh;
 }
 
 .desk-logo-a{
@@ -57,15 +60,15 @@ header{
 }
 
 .desk-menu-button{
-    margin: 0 0.9vw;
+    margin: 0.9vw;
     background-color: transparent;
     border-width: 0;
     color: white;
     font-family: "LATO", sans-serif;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 0.75em;
     cursor: pointer;
-    padding: 0 2.5px 3px 2.5px;
+    padding: 3px;
     -webkit-transition: all 0.3s ease;
     transition:  all 0.3s ease;
 }
@@ -101,25 +104,31 @@ header{
 }
 
 .desk-menu-diagnostico{
-    margin: 0.9vw;
-    margin-left: 17vw;
+    margin:  0.9vw 0;
+    transform: translateX(10%);
     background-color: transparent;
     font-family: "LATO", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.9vw;
-    border-width: 0;
     cursor: pointer;
+
     -webkit-transition: all 0.3s ease;
     transition:  all 0.3s ease;
     width: 10vw;
     height: 2.5vw;
+
     color: #2171a9b5;
+
     border-radius: 2px;
     border-width: 1px;
     border-style: solid;
     border-color: #2171a9b5;
+
+    position: absolute;
+    right: 6vw;
+    top: 0px
 }
 
 .desk-menu-diagnostico:hover{
@@ -193,13 +202,14 @@ header{
     text-align: center;
     padding: 5px;
     font-size: 5vh;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "Lato";
     line-height: 1.1;
-    font-weigth: normal;
+    font-weigth: bold;
     margin-left: -5px;
     padding-left: 0;
     margin-bottom: 0;
     padding-bottom: 0;
+    text-transform: uppercase;
 
 }
 
@@ -496,6 +506,7 @@ header{
 
 .quemsomos-lema{
     margin-bottom: 0px;
+    text-transform: uppercase;
 }
 
 .quemsomos-local{
@@ -761,6 +772,7 @@ footer{
     background-color: white;
     width: 100%;
     padding: 3vh 0;
+    font-family: "LATO";
 }
 
 footer .ft{
@@ -806,16 +818,20 @@ footer .aside li{
 }
 
 footer .aside{
-    margin-left: 50%;
+    margin-left: 0;
     clear: both;
     position: relative;
-    transform: translateX(-25%);
+    transform: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .copyright{
     width: 100%;
     float: left;
     text-align: center;
+    margin: 0;
 }
 
 /* Para Smartphones e telas menores que 600px */
@@ -834,8 +850,8 @@ footer .aside{
         height: inherit;
         padding: 0vw;
         width: 23vw;
-        float: left;
-        margin-left: 5vw;
+        position: absolute;
+        left: 5px;
     }
     .desk-menu-div{
         display: inherit;
@@ -889,6 +905,12 @@ footer .aside{
         background-image: url(../imagens/slide2-mobile.png);
     }
 
+    /* Processo Seltivo */
+    .processoseletivo-image{
+        width: 1.2em;
+        height: auto;
+    }
+
     /* Solucoes */
     .solucoes-servico{
         width: 100vw;
@@ -900,9 +922,24 @@ footer .aside{
         margin-bottom: 0;
     }
 
+    .solucao-image-content{
+        width: 14em;
+        padding: 2em;
+    }
+
+    .solucoes-image{
+        width: 1.2em;
+        height: auto;
+    }
+
     /* Blog */
     .blog-articles{
         flex-wrap: wrap;
+    }
+
+    .blog-image{
+        width: 1.2em;
+        height: auto;
     }
 
     /* Quem Somos */
@@ -942,6 +979,7 @@ footer .aside{
         -webkit-transition: all 0.2s ease-in-out;
         transition:  all 0.2s ease-in-out;
         color: white;
+        width: 100%;
         background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.2));
     }
 
@@ -969,6 +1007,31 @@ footer .aside{
         height: 70%;
     }
 
+    /* Footer */
+    footer .ft{
+        align-items: left;
+        justify-content: left;
+        height: auto;
+        flex-direction: column;
+
+    }
+
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    footer div img{
+        width: 2em;
+    }
+
+    footer div{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
 }
 
 @media all and (max-width: 600px){
@@ -980,6 +1043,8 @@ footer .aside{
 html, body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 button{

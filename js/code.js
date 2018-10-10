@@ -59,6 +59,10 @@ class background{
     }
 }
 
+function getHeight(el){
+    return el.innerHeight;
+}
+
 
 //COOKIES
 function setCookie(cname, cvalue, exdays) {
