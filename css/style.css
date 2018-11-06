@@ -71,28 +71,19 @@ header{
     padding: 3px;
     -webkit-transition: all 0.3s ease;
     transition:  all 0.3s ease;
+
+    border-width: 0px 0px 2px 0;
+    border-color: transparent;
+    padding-top: 7px;
 }
 
 .desk-menu-button-scrolled{
     color: #1f2024;
 }
 
-.desk-menu-button:active{
-    color: white;
-    border-width: 0 0 1px;
-    border-color: white;
-}
-
-.desk-menu-button-scrolled:active{
-    color: #000000;
-    border-width: 0 0 1px;
-    border-color: #000000;
-}
-
 .desk-menu-button-activated{
-    color: white;
     border-width: 0 0 2px;
-    border-color: #2171a9;
+    border-color:  #49b4ff;
 }
 
 .desk-menu-button:hover{
@@ -341,6 +332,21 @@ header{
     padding: 0px 5vw;
 }
 
+.processoseletivo-form{
+    padding: 0px 5vw;
+    overflow: hidden;
+    width: 100%;
+    -webkit-transition: max-height .8s cubic-bezier(0, 1, 0, 1) -.1s;
+    transition: max-height .8s cubic-bezier(0, 1, 0, 1) -.1s;
+    transform-origin: top;
+    max-height: 0px;
+}
+.processoseletivo-form-activated{
+    transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
+    transition-delay: 0s;
+    max-height: 300vw !important;
+}
+
 .processoseletivo-description{
     margin: 0;
     padding: 0;
@@ -372,6 +378,33 @@ header{
     background-color: white;
     color: #619ac2;
     border-color: #1e72ab;
+}
+
+.processoseletivo-setacima{
+    width: 2.4em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transition: all 0.4s ease;
+    transition:  all 0.4s ease;
+    bottom: 0.2em;
+    cursor: pointer;
+}
+
+.processoseletivo-setacima:hover{
+    animation-name: ps-setacima;
+    animation-duration: 0.3s;
+    animation-iteration-count: 2;
+}
+
+.processoseletivo-setacima-disabled{
+    display: none;
+}
+
+@keyframes ps-setacima{
+    0% {bottom: 0.2em;}
+    50% {bottom: 0.6em;}
+    100% {bottom: 0.2em;}
 }
 
 /* Sesssao Blog */
@@ -481,7 +514,6 @@ header{
 }
 
 /* Quem Somos */
-
 .quemsomos-section{
     float: left;
     position: relative;
@@ -832,6 +864,7 @@ footer .aside{
     float: left;
     text-align: center;
     margin: 0;
+    font-size: 0.7em;
 }
 
 /* Para Smartphones e telas menores que 600px */

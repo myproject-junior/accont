@@ -19,28 +19,28 @@
                 <img class="desk-logo" src="./imagens/logo.png" />
                 <ul class="desk-menu-ul">
                     <li class="desktop">
-                        <a href="#inicio"><button class="desk-menu-button">INÍCIO</button></a>
+                        <a href="#!slider"><button onclick="menuClick()" id="slider-bt" class="desk-menu-button desk-menu-button-activated">INÍCIO</button></a>
                     </li>
                     <li class="desktop">
-                        <a href="#solucoes"><button class="desk-menu-button">SOLUÇÕES</button></a>
+                        <a href="#!solucoes"><button onclick="menuClick()" id="solucoes-bt" class="desk-menu-button">SOLUÇÕES</button></a>
                     </li>
                     <li class="desktop">
-                        <a href="#processoseletivo"><button class="desk-menu-button">PROCESSO SELETIVO</button></a>
+                        <a href="#!processo-seletivo"><button onclick="menuClick()" id="processo-seletivo-bt" class="desk-menu-button">PROCESSO SELETIVO</button></a>
                     </li>
                     <li class="desktop">
-                        <a href="#blog"><button class="desk-menu-button">BLOG</button></a>
+                        <a href="#!blog"><button onclick="menuClick()" id="blog-bt" class="desk-menu-button">BLOG</button></a>
                     </li>
                     <li class="desktop">
-                        <a href="#sobrenos"><button class="desk-menu-button">QUEM SOMOS</button></a>
+                        <a href="#!quemsomos"><button onclick="menuClick()" id="quemsomos-bt" class="desk-menu-button">QUEM SOMOS</button></a>
                     </li>
                 </ul>
-                <button class="desk-menu-diagnostico"><img class="desk-menu-diagnostico-image" src="./imagens/lupa.svg"><img class="desk-menu-diagnostico-image2" src="./imagens/lupa2.svg">DIAGNOSTICO</button>
+                <button onclick="window.location.hash = '#!diagnostico'; menuClick();" class="desk-menu-diagnostico"><img class="desk-menu-diagnostico-image" src="./imagens/lupa.svg"><img class="desk-menu-diagnostico-image2" src="./imagens/lupa2.svg">DIAGNOSTICO</button>
             </div>
         </header>
 
         <!-- slide superior -->
 
-        <section class="slider">
+        <section id="slider" class="slider">
             <div id="slide" style="background-position: 0 0%;" class="slide slide1">
             </div>
 
@@ -53,7 +53,7 @@
 
         <!-- Seção da solução de contabeis -->
 
-        <section class="solucoes-section">
+        <section id="solucoes" class="solucoes-section">
             <h1 class="solucoes-title"><img src="./imagens/solucoescontabeis.png" class="solucoes-image"> Soluções Contábeis</h1>
 
             <!-- serviços -->
@@ -85,16 +85,24 @@
         </section>
 
         <!-- processo seletivo -->
-        <section class="processoseletivo-section">
+        <section id="processo-seletivo" class="processoseletivo-section">
             <h1 class="processoseletivo-title"><img src="./imagens/processoseletivo.png" class="processoseletivo-image"> Processo Seletivo</h1>
             <div class="processoseletivo-div">
                 <p class="processoseletivo-description">Para você que deseja fazer parte da nossa EJ, nós abrimos Processos Seletivos todo semestre! Procuramos líderes com visão a longo alcance, pessoas compromissadas com agilidade para alçar vôo e protagonistas com atitude para tomar os céus.</p>
-                <button class="processoseletivo-button" type="button">Participar</button>
+                <button class="processoseletivo-button" id="processoseletivo-button" type="button">Participar</button>
+            </div>
+            <div class="processoseletivo-form" id="processoseletivo-form">
+                <span class="diagnostico-form-info">Nome</span><br>
+                <input class="diagnostico-form-input diagnostico-nome" type="text" placeholder="Seu Nome"><br><br>
+                <span class="diagnostico-form-info">Email</span><br>
+                <input class="diagnostico-form-input" type="text" placeholder="Email">
+                <br><br><br>
+                <img src="./imagens/setaCima.svg" id="processoseletivo-seta" class="processoseletivo-setacima processoseletivo-setacima-disabled">
             </div>
         </section>
 
         <!--blog -->
-        <section class="blog-section">
+        <section id="blog" class="blog-section">
             <h1 class="blog-title"><img src="./imagens/blog.png" class="blog-image"> Últimas Atualizações</h1>
             <div class="blog-articles">
                 <!--primeira postagem -->
@@ -176,7 +184,7 @@
         </section>
 
         <!-- Imagens para o portfólio -->
-        <section class="quemsomos-section">
+        <section id="quemsomos" class="quemsomos-section">
             <h1 class="quemsomos-title"><img src="./imagens/quemsomos.png" class="quemsomos-image"> Quem Somos</h1>
             <div class="quemsomos-div">
                 <img class="quemsomos-logo" src="./imagens/logoc.png">
@@ -187,7 +195,7 @@
         </section>
 
         <!-- Imagens para o portfólio -->
-        <section class="portfolio-section">
+        <section id="portfolio" class="portfolio-section">
             <div class="portolio-model-1 portfolio-model">
                 <div class="portfolio-content">
                     <h2 class="portfolio-title">Empresa 01</h2>
@@ -227,7 +235,7 @@
             </div>
         </section>
         <!-- Diagnostico -->
-        <section class="diagnostico-section">
+        <section id="diagnostico" class="diagnostico-section">
             <h1 class="diagnostico-title"><img src="./imagens/diagnostico.svg" class="diagnostico-image"> Faça o diagnóstico da sua Empresa!</h1>
             <!-- Titulo Diagnostico -->
             <!-- Mini Descrição abaixo do título -->
@@ -256,7 +264,7 @@
         </section>
 
         <!-- Parceiros -->
-        <section class="parceiros-section">
+        <section id="parceiros" class="parceiros-section">
 
         </section>
 

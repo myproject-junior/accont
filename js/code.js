@@ -1,6 +1,16 @@
+const sectionsId = ["slider", "solucoes", "processo-seletivo", "blog", "quemsomos"]
+
 //Eventos
-//Evento da HASH
+//Evento de hash
 window.addEventListener("hashchange", menuClick);
+window.addEventListener("scroll", scrolling);
+
+
+$(document ).ready(function(){
+    //Qdo clicar no botão de participar
+    document.getElementById("processoseletivo-button").addEventListener("click", participarClick);
+    document.getElementById("processoseletivo-seta").addEventListener("click", participarClickDisable);
+});
 
 //Quando der scroll
 window.onscroll = function(){
@@ -10,12 +20,7 @@ window.onscroll = function(){
 
 //Quando clicar no menu
 function menuClick(){
-    let deskButton = document.getElementsByClassName("desk-menu-button");
-    for(let i = 0; i < deskButton.length; i++){
-        if("#" + deskButton.href === window.location.hash){
-
-        }
-    }
+    window.scrollTo(0, document.getElementById(window.location.hash.replace("#!", "")).getBoundingClientRect().top + window.scrollY - document.getElementsByClassName("desk-menu-div")[0].offsetHeight);
 }
 
 //Mudar posição do slide
@@ -36,14 +41,37 @@ function menuBarChange(){
     }
 }
 
-/*Checar posição do elemento*/
-function elemGetPosition(element, orientation){
-    const elem = document.querySelector(element);
-    if(orientation === 1){
-        return elem.offsetTop - window.innerHeight + $(element).height();
-    }else if(orientation === 2){
-        return elem.offsetTop;
+//Quando der scroll
+function scrolling(){
+    let id;
+    for(id = 0; id  < sectionsId.length ; id++){
+        if(id < sectionsId.length-1) {
+            if ((window.scrollY+1) >= getLocation(id) && window.scrollY <= getLocation(id + 1)) {
+                if (document.getElementsByClassName("desk-menu-button-activated").length > 0)
+                    document.getElementsByClassName("desk-menu-button-activated")[0].classList.remove("desk-menu-button-activated");
+                document.getElementById(sectionsId[id] + "-bt").classList.add("desk-menu-button-activated");
+            }
+        }else if(window.scrollY >= getLocation(sectionsId.length-1)){
+            if(document.getElementsByClassName("desk-menu-button-activated").length > 0)
+                document.getElementsByClassName("desk-menu-button-activated")[0].classList.remove("desk-menu-button-activated");
+            document.getElementById(sectionsId[(sectionsId.length-1)] + "-bt").classList.add("desk-menu-button-activated");
+        }
     }
+}
+
+function getLocation(id){
+    return document.getElementById(sectionsId[id]).getBoundingClientRect().top + window.scrollY - document.getElementsByClassName("desk-menu-div")[0].offsetHeight;
+}
+
+//Quando clicar no botão de participar
+function participarClick(){
+    document.getElementById("processoseletivo-form").classList.add("processoseletivo-form-activated");
+    document.getElementById("processoseletivo-seta").classList.remove("processoseletivo-setacima-disabled");
+}
+
+function participarClickDisable(){
+    document.getElementById("processoseletivo-form").classList.remove("processoseletivo-form-activated");
+    document.getElementById("processoseletivo-seta").classList.add("processoseletivo-setacima-disabled");
 }
 
 /*
@@ -51,6 +79,7 @@ classes
 
 Fazer o background se mover
 */
+
 class background{
     static newPosition(){
         const element = document.getElementById("slide");
@@ -58,11 +87,6 @@ class background{
         element.style.backgroundPosition = "0 " + parseInt(window.scrollY/totalHeight*100) + "%";
     }
 }
-
-function getHeight(el){
-    return el.innerHeight;
-}
-
 
 //COOKIES
 function setCookie(cname, cvalue, exdays) {
@@ -85,9 +109,4 @@ function getCookie(cname) {
         }
     }
     return "";
-}
-
-if((window.orientation == 90) || (window.orientation == -90)){
-    let y = document.getElementsByClassName("clube");
-    for (let k = 0; k < y.length; k++) if(y[k].textContent = "FOR") [k].innerHTML = "Fortaleza";
 }
