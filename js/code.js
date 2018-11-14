@@ -19,10 +19,10 @@ window.onscroll = function(){
 };
 
 //Quando clicar no menu
-function menuClick(){
-    window.scrollTo(0, document.getElementById(window.location.hash.replace("#!", "")).getBoundingClientRect().top + window.scrollY - document.getElementsByClassName("desk-menu-div")[0].offsetHeight);
+function menuClick() {
+    let dScroll = document.getElementsByClassName("menuScrolled")[0] || document.querySelector("header");
+    window.scrollTo(0, document.getElementById(window.location.hash.replace("#!", "")).getBoundingClientRect().top + window.scrollY - dScroll.offsetHeight);
 }
-
 //Mudar posição do slide
 function backPosChange(){
     background.newPosition();
@@ -115,11 +115,34 @@ if((window.orientation == 90) || (window.orientation == -90)){
     let y = document.getElementsByClassName("clube");
     for (let k = 0; k < y.length; k++) if(y[k].textContent = "FOR") [k].innerHTML = "Fortaleza";
 }
-
-$(document).ready(function(){
-    $('.parceiros-section').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
+if (typeof window.orientation !== 'undefined' && window.innerWidth > 600){
+    $(document).ready(function () {
+        $('.parceiros-section').slick({
+            autoplay: true,
+            autoplaySpeed: 10000,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+            centerMode: true,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"> < </button>',
+            nextArrow: '<button type="button" class="slick-next"> > </button>'
+        });
     });
-});
+}else{
+    $(document).ready(function () {
+        $('.parceiros-section').slick({
+            autoplay: true,
+            autoplaySpeed: 10000,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+            centerMode: true,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"> < </button>',
+            nextArrow: '<button type="button" class="slick-next"> > </button>'
+        });
+    });
+}

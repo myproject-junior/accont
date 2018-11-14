@@ -3,7 +3,7 @@
     display: block;
 }
 .mobile{
-    display: none;
+    display: none !important;
 }
 
 /* Parte superior/MENU */
@@ -783,18 +783,57 @@ header{
     position: relative;
     width: 100%;
     background-color: #ffffff;
+    padding: 1.2em 0;
 }
 
-.parceiros{
-    margin: 0 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.parceiros-image{
-    width: 10vw;
+.parceiros-section img{
+    height: 5em;
     margin: 0 10vw;
+}
+
+.parceiros-section{
+    height: 7.4em !important;
+}
+
+.slick-prev{
+    background-color: transparent;
+    height: 100%;
+    position: absolute;
+    font-size: 3.4em;
+    font-family: monospace;
+    padding: 0 0.7em;
+    opacity: 0.6;
+    transition: all 0.4s ease;
+    z-index: 10;
+    background: linear-gradient(to right, rgba(0,0,0,0.05), transparent);
+    cursor: pointer;
+    top: 0;
+}
+
+.slick-prev:hover{
+    opacity: 0.8;
+    background: linear-gradient(to right, rgba(0,0,0,0.1), transparent);
+}
+
+.slick-next{
+    background-color: transparent;
+    height: 100%;
+    position: absolute;
+    font-size: 3.4em;
+    font-family: monospace;
+    padding: 0 0.7em;
+    opacity: 0.6;
+    transition: all 0.4s ease;
+    z-index: 10;
+    background: linear-gradient(to left, rgba(0,0,0,0.05), transparent);
+    cursor: pointer;
+    top: 0;
+    right: 0
+}
+
+.slick-next:hover{
+    opacity: 0.8;
+    background: linear-gradient(to left, rgba(0,0,0,0.1), transparent);
 }
 
 /* Footer */
@@ -882,10 +921,15 @@ footer .aside{
         max-height: inherit;
         height: inherit;
         padding: 0vw;
-        width: 23vw;
-        position: absolute;
-        left: 5px;
+        width: 6em;
     }
+
+    .nav-brand{
+        position: absolute;
+        right: 8em;
+        top: 0.8em;
+    }
+
     .desk-menu-div{
         display: inherit;
         align-items: inherit;
@@ -1063,6 +1107,10 @@ footer .aside{
     footer div{
         font-size: 1.2em;
         text-align: center;
+    }
+    .parceiros-section img {
+        height: 5em;
+        margin: 0 20em;
     }
 
 }
