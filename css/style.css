@@ -244,9 +244,10 @@ header{
     align-items: center;
     justify-content: left;
     display: flex;
-    font-weight: normal;
     padding: 0;
+    font-family: calibri;
     margin: 15px 5vw;
+    text-transform: uppercase;
 }
 
 .solucoes-image{
@@ -315,8 +316,10 @@ header{
     justify-content: left;
     display: flex;
     padding: 0;
+    font-family: calibri;
     margin: 15px 5vw;
-    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
 }
 
 .processoseletivo-image{
@@ -432,9 +435,10 @@ header{
     justify-content: left;
     display: flex;
     padding: 0;
+    font-family: calibri;
     margin: 15px 5vw;
-    color: black;
-    font-weight: normal;
+    color: #1A1A1A;
+    text-transform: uppercase;
 }
 
 .blog-image{
@@ -499,7 +503,7 @@ header{
     padding: 0;
 }
 
-.blog-aside-views, .blog-aside-comments{
+.blog-aside-views{
     width: 48%;
     padding: 0;
     margin: 0;
@@ -529,11 +533,12 @@ header{
     align-items: center;
     justify-content: left;
     display: flex;
-    padding: 15px 5vw;
-    margin-top: -1px;
-    color: #efce4a;
+    padding: 0;
+    font-family: calibri;
+    margin: 15px 5vw;
+    color: #1A1A1A;
     font-weight: bold;
-    margin-bottom: 0px;
+    text-transform: uppercase;
 }
 
 .quemsomos-lema{
@@ -554,9 +559,12 @@ header{
 }
 
 .quemsomos-image{
-    height: 5vh;
+    height: 19px;
     padding: 0 10px 0 0;
-    margin: 0 5px 0 0;
+    margin: 0 10px 0 0;
+    border-style: solid;
+    border-color: #4f5577;
+    border-width: 0px 1px 0px 0px;
 }
 
 .quemsomos-div{
@@ -564,13 +572,11 @@ header{
 }
 
 .quemsomos-logo{
-    width: 25vw;
+    width: 16vw;
     margin: 0;
     position: absolute;
-    top: 50%;
-    right: 5vw;
-    transform: translateY(-50%);
-
+    top: 3.4em;
+    right: 8.4vw;
 }
 
 .quemsomos-lema, .quemsomos-local, .quemsomos-description{
@@ -578,98 +584,114 @@ header{
 }
 .quemsomos-description{
     min-height: 18vh;
+    margin-bottom: 5em;
+}
+/* Missao */
+.missao-div{
+    margin: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
 }
 
-/* Portfolio */
-.portfolio-section{
-    float: left;
-    position: relative;
-    font-family: "lato";
-    margin: 0;
+.missao-title{
+    font-size: 2.5em;
+    margin-right: 2.5em;
     padding: 0;
-    width: 90%;
-    padding: 3vh 5%;
-    background-color: #dfdfdf;
-    box-sizing: content-box !important;
+    text-transform: uppercase;
+    background-color: transparent;
 }
 
-.portolio-model-1, .portolio-model-3, .portolio-model-5{
-    float: right;
-}
-
-.portolio-model-2, .portolio-model-4{
-    float: left;
-}
-
-.portfolio-model{
-    height: 22vw;
-    background-size: 102%;
-    background-position: center;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition:  all 0.3s ease-in-out;
-    position: relative;
-}
-
-.portfolio-model:hover{
-    background-size: 107%;
-}
-
-.portolio-model-1{
-    background-image: url("../imagens/slide1-mobile.jpg");
-    width: 28%;
-    height: 44vw !important;
-    border-radius: 0 2px 2px 0;
-}
-
-.portolio-model-2{
-    background-image: url("../imagens/slide2.png");
-    width: 50%;
-    border-radius: 2px 0 0 0;
-}
-
-.portolio-model-3{
-    background-image: url("../imagens/servico3.png");
-    width: 22.002%;
-}
-
-.portolio-model-4{
-    background-image: url("../imagens/servico2.png");
-    width: 22.002%;
-    border-radius: 0 0 0 2px;
-}
-
-.portolio-model-5{
-    background-image: url("../imagens/slide1.png");
-    width: 50%;
-}
-
-.portfolio-content{
-    position: absolute;
-    bottom: 0px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition:  all 0.2s ease-in-out;
-    color: white;
-    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
-}
-
-.portfolio-model:hover .portfolio-content{
-    padding-bottom: 10px;
-    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
-}
-
-.portfolio-title{
-    padding: 0 1vw;
-    margin-bottom: 5px;
-}
-
-.portfolio-description{
-    padding: 0 1vw;
-    font-weight: normal;
-    margin-top: 0;
+.missao-description{
+    margin: 0;
     text-align: justify;
     text-justify: inter-word;
 }
+
+/* Visao */
+.visao-div{
+    margin: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.visao-title{
+    font-size: 2.5em;
+    margin-left: 2.5em;
+    padding: 0;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.visao-description{
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Valores */
+
+.valores-div{
+    margin: 0 5vw;
+    padding: 1em;
+}
+
+.valores-title{
+    font-size: 2.5em !important;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.valores-icons{
+    display: flex;
+    padding-top: 0px;
+}
+
+.valor-container{
+    padding: 0 1vw;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+.valor-image-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 13px;
+    border-width: 2px;
+    border-color: #212529;
+    border-style: solid;
+    border-radius: 100%;
+    margin-bottom: 1vh;
+}
+
+.valor-image{
+    width: 100%;
+}
+
+.valor-title, .valor-description{
+    text-align: center;
+    font-family: "Calibri";
+    font-weight: lighter;
+    font-size: 1em !important;
+}
+
+.valor-title{
+    font-size: 1.6em !important;
+}
+
 
 /* Diagnostico */
 
@@ -690,9 +712,10 @@ header{
     align-items: center;
     justify-content: left;
     display: flex;
-    font-weight: normal;
     padding: 0;
+    font-family: calibri;
     margin: 15px 5vw;
+    text-transform: uppercase;
 }
 
 .diagnostico-image{
@@ -743,7 +766,7 @@ header{
     justify-content: center;
     font-size: 0.9em;
     border-width: 1px;
-    border-color: #2171a9;
+    border-color: #1c6394;
     border-style: solid;
     cursor: pointer;
     -webkit-transition: all 0.2s ease;
@@ -754,7 +777,8 @@ header{
 }
 
 .diagnostico-enviar:hover{
-    box-shadow: 0px 0px 3px rgba(255,255,255,0.2);
+    background-color: #2171a9d1;
+    border-color: transparent;
 }
 
 .diagnostico-enviar-image{
@@ -1026,43 +1050,6 @@ footer .aside{
 
     .quemsomos-logo{
         display: none;
-    }
-
-    /* Portfolio */
-    .portolio-model-1, .portolio-model-3, .portolio-model-5{
-        float: inherit;
-    }
-
-    .portolio-model-2, .portolio-model-4{
-        float: inherit;
-    }
-
-    .portfolio-model{
-        height: 28vh !important;
-        background-size: 102%;
-        background-position: center;
-        cursor: pointer;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition:  all 0.3s ease-in-out;
-        width: 100% !important;
-        margin: 4vh 0;
-    }
-
-    .portfolio-model:hover{
-        background-size: 102%;
-    }
-
-    .portfolio-content{
-        -webkit-transition: all 0.2s ease-in-out;
-        transition:  all 0.2s ease-in-out;
-        color: white;
-        width: 100%;
-        background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.2));
-    }
-
-    .portfolio-model:hover .portfolio-content{
-        padding-bottom: 5px;
-        background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
     }
 
     /* Diagnostico */
